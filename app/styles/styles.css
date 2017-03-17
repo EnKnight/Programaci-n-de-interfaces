@@ -1,0 +1,26 @@
+.fondo{
+    background: url(../images/dark_embroidery.png);
+    background-attachment: fixed;
+}
+
+.encabezado{
+    background: url(../images/eight_horns.png);
+    text-align: center;
+    padding: 40px;
+}
+
+.encabezado .foto{
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.boton{
+	margin: 10px;
+	width: 150px;
+	/*padding: 5px;*/
+}
+
+.info{
+    color: #C8C8C8;
+    text-align: justify;
+}

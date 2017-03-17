@@ -1,0 +1,36 @@
+<!-- <div class="jumbotron">
+  <h1>'Allo, 'Allo!</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Always a pleasure scaffolding your apps.
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+</div>
+
+<div class="row marketing">
+  <h4>HTML5 Boilerplate</h4>
+  <p>
+    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
+  </p>
+
+  <h4>Angular</h4>
+  <p>
+    AngularJS is a toolset for building the framework most suited to your application development.
+  </p>
+
+  <h4>Karma</h4>
+  <p>Spectacular Test Runner for JavaScript.</p>
+</div> -->
+<div class="row" ng-controller="MainmenuCtrl as $ctrl">
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    <button class="btn-lg boton" id="historia" ng-click="$ctrl.verHistoria()">Historia</button><br>
+    <button class="btn-lg boton" id="disciplinas" ng-click="$ctrl.verDisciplinas()">Disciplinas</button><br>
+    <button class="btn-lg boton" id="maestros" ng-click="$ctrl.verMaestros()">Maestros</button><br>
+  </div>
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    <button class="btn-lg boton" id="alumnos" ng-click="$ctrl.verAlumnos()">Alumnos</button><br>
+    <button class="btn-lg boton" id="galeria" ng-click="$ctrl.verGaleria()">Galería</button><br>
+    <button class="btn-lg boton" id="eventos" ng-click="$ctrl.verEventos()">Eventos</button><br>
+  </div>
+</div>
+<!-- <script type="text/javascript" src="scripts/botones.js"></script> -->
