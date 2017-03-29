@@ -10,21 +10,13 @@
 angular.module('proyectoFinalApp')
   .controller('MainmenuCtrl', function ($location) {
     var $ctrl = this;
-    // var btnHistoria = document.getElementById('historia');
-    // console.log("Help :'(");
-    /*var btnHistoria = document.getElementById("historia");
-    var btnHistoria = document.getElementById("historia");
-    var btnHistoria = document.getElementById("historia");
-    var btnHistoria = document.getElementById("historia");
-    var btnHistoria = document.getElementById("historia");
-    */
     $ctrl.verHistoria = function(){
     	console.log("Ver Historia");
     	$location.path("/historia");
     };
 
     $ctrl.verDisciplinas = function(){
-
+        $location.path("/disciplinas");
     };
 
     $ctrl.verMaestros = function(){
@@ -47,11 +39,4 @@ angular.module('proyectoFinalApp')
     	$location.path("/menu");
 
     };
-
-    /*function verHistoria(){
-    	console.log('Ver Historia');
-    	$location.path('/historia');
-    }
-*/
-    // btnHistoria.addEventListener('click', verHistoria); 
   });
