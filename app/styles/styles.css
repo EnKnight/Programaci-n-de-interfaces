@@ -25,9 +25,28 @@ and open the template in the editor.
 }
 
 .boton{
-	margin: 10px;
+	/*margin: 10px;
 	width: 150px;
-	/*padding: 5px;*/
+	padding: 5px;*/
+    background: #e4eef5;
+  background-image: -webkit-linear-gradient(top, #e4eef5, #c4c4c4);
+  background-image: -moz-linear-gradient(top, #e4eef5, #c4c4c4);
+  background-image: -ms-linear-gradient(top, #e4eef5, #c4c4c4);
+  background-image: -o-linear-gradient(top, #e4eef5, #c4c4c4);
+  background-image: linear-gradient(to bottom, #e4eef5, #c4c4c4);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 1px 1px 3px #666666;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 25px;
+  padding: 10px 20px 10px 20px;
+  margin: 10px 10px 10px 10px;
+  text-decoration: none;
 }
 
 .info{

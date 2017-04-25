@@ -32,7 +32,7 @@ angular.module('proyectoFinalApp')
     };
 
     $ctrl.verEventos = function(){
-
+        $location.path("/eventos");
     };
 
     $ctrl.regresar = function(){

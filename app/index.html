@@ -13,11 +13,25 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/galery.styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/menu.styles.css">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" type="text/css" href="styles/jssor.css">
+    <link rel="stylesheet" type="text/css" href="styles/gallery.styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/history.styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/disciplines.styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/events.styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/single.discipline.css">
+    <link rel="stylesheet" type="text/css" href="styles/print.styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/welcome.styles.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
     <!-- endbuild -->
   </head>
   <body ng-app="proyectoFinalApp" class="fondo">
+    <audio src="videos/song1.mp3" >
+      <p>Tu navegador no implementa el elemento audio</p>
+    </audio>
+    
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -50,11 +64,9 @@
       </div>
     </div> -->
 
-    <div class="encabezado">
-      <img class="foto" src="images/logo.jpg" alt="">      
-    </div>
+    
 
-    <div ng-view="" class="container">
+    <div ng-view="" >
       
     </div>
 
@@ -100,6 +112,11 @@
         <script src="scripts/controllers/mainmenu.js"></script>
         <script src="scripts/directives/jssor.js"></script>
         <script src="scripts/services/jssor.js"></script>
+        <script src="scripts/controllers/historia.js"></script>
+        <script src="scripts/controllers/gallery.js"></script>
+        <script src="scripts/controllers/disciplinas.js"></script>
+        <script src="scripts/services/viewdisciplines.js"></script>
+        <script src="scripts/controllers/eventos.js"></script>
         <!-- endbuild -->
 </body>
 </html>

@@ -1,36 +1,111 @@
-<!-- <div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+<audio src="audio/bienvenido.wav" autoplay>
+  <p>Tu navegador no implementa el elemento audio</p>
+</audio>
+
+<div class="encabezado">
+  <img class="foto" src="images/logo2.jpg" alt="">      
 </div>
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
-
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
-</div> -->
-<div class="row" ng-controller="MainmenuCtrl as $ctrl">
-  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-    <button class="btn-lg boton" id="historia" ng-click="$ctrl.verHistoria()">Historia</button><br>
-    <button class="btn-lg boton" id="disciplinas" ng-click="$ctrl.verDisciplinas()">Disciplinas</button><br>
-    <button class="btn-lg boton" id="maestros" ng-click="$ctrl.verMaestros()">Maestros</button><br>
-  </div>
-  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-    <button class="btn-lg boton" id="alumnos" ng-click="$ctrl.verAlumnos()">Alumnos</button><br>
-    <button class="btn-lg boton" id="galeria" ng-click="$ctrl.verGaleria()">Galería</button><br>
-    <button class="btn-lg boton" id="eventos" ng-click="$ctrl.verEventos()">Eventos</button><br>
-  </div>
-</div>
-<!-- <script type="text/javascript" src="scripts/botones.js"></script> -->
+<div class="mywelcomecontainer">
+     <div class="content-left">
+       <div class="sec_1">
+         <div class="sec_1 grids">
+           <div class="post1 col-md-4">
+             <img src="images/13.png" class="img-responsive" alt=""/>
+             <div class="post1-info">
+             
+                <!-- <div class="tag2">
+                 <h4><a ng-click="$menu.verGaleria()">Games</a></h4>                
+                </div> -->
+                <p><span>Batman</span> has been licensed and adapted into a variety of media</p>
+                <button class="btn" ng-click="$menu.verDisciplinas()">Disciplinas</button>
+                <div class="comments">
+                 <ul>
+                   <li><a href="#"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> 32</a></li>
+                   <li><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> 1245</li>
+                   <li><span class="glyphicon glyphicon-time" aria-hidden="true"></span> 24 March</li>
+                 </ul>
+                </div>
+              </div>              
+           </div>
+           <div class="post2 col-md-4">
+              <div class="post2-pic">
+               <img src="images/post2.png" class="img-responsive" alt=""/>
+              </div>
+              <div class="post2-info">
+              
+               <!-- <div class="tag2">
+                 <h4><a href="#">Heroes</a></h4>                 
+                </div> -->
+                <div class="post2_text">
+                 <h3><a href="#">Zod manipulated Phantom Zone</a></h3>
+                 <p>As his son was the only Phantom Zoner capable of maintaining a physical form, Zod sent the rocket ship out of the...</p>
+                </div>
+                <button class="btn" ng-click="$menu.verGaleria()">Galeria</button>
+                <div class="comments2">
+                 <ul>
+                   <li><a href="#"><span class="glyphicon glyphicon-comment2" aria-hidden="true"></span> 32</a></li>
+                   <li><span class="glyphicon glyphicon-eye-open2" aria-hidden="true"></span> 1245</li>
+                   <li><span class="glyphicon glyphicon-time2" aria-hidden="true"></span> 24 March</li>
+                 </ul>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="sale-box"><span class="on_sale title_shop">NEW POST</span></div>
+           </div>
+           <div class="col-md-4"></div>
+           <div class="clearfix"></div>
+         </div>
+       </div>
+       <!---->
+       <div class="sec_2">
+         <div class="sec_2 grids">
+           <div class="col-md-4 post3">
+             <h3>Green Lantern</h3>
+             <h4>Chief redactor</h4>
+             <p>Aquaman is a superhero appearing in comic book titles by DC Comics. Created by Paul Norris and Mort Weisinger</p>
+             <div class="dot2">
+               <img src="images/dot.png" alt=""/>
+             </div>
+             <button class="btn">Alumnos</button>
+             <div class="comments2">
+                 <ul>
+                   <li><a href="#"><span class="glyphicon glyphicon-comment2" aria-hidden="true"></span> 32</a></li>
+                   <li><span class="glyphicon glyphicon-eye-open2" aria-hidden="true"></span> 1245</li>
+                   <li><span class="glyphicon glyphicon-time2" aria-hidden="true"></span>Yesterday</li>
+                 </ul>
+             </div>
+           </div>
+           <div class="col-md-4 post4">
+             <img src="images/12.png" class="img-responsive" alt="">
+             <div class="post4-info">
+               <h3><a href="#">Story about Gordon Flash</a></h3>
+               <p>Rookie cop James W. Gordon was transferred City to Chicago as part of a plan by Gillian Loeb, then...</p>
+               <div class="comments cmnt">
+                 <ul>
+                   <li><a href="#"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> 32</a></li>
+                   <li><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> 1245</li>
+                   <li><span class="glyphicon glyphicon-time" aria-hidden="true"></span> 24 March</li>
+                 </ul>
+                </div>
+             </div>            
+           </div>
+           <div class="col-md-4 post5">
+              <img src="images/11.png" class="img-responsive" alt="">
+              <h3>The character will appear in the 2016 film Batman vs Superman</h3>
+              <p>Shazam informs Billy that he is an ancient Egyptian wizard who has been using his powers for...</p>
+              <div class="comments2 cmnt2">
+                 <ul>
+                   <li><a href="#"><span class="glyphicon glyphicon-comment2" aria-hidden="true"></span> 32</a></li>
+                   <li><span class="glyphicon glyphicon-eye-open2" aria-hidden="true"></span> 1245</li>
+                   <li><span class="glyphicon glyphicon-time2" aria-hidden="true"></span>Yesterday</li>
+                 </ul>
+             </div>
+           </div>
+           <div class="clearfix"></div>          
+         </div>
+       </div>
+     </div>
+         
+       <div class="clearfix"></div>
+     </div>

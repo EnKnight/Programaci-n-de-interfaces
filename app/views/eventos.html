@@ -1,0 +1,101 @@
+<audio src="audio/eventos.wav" autoplay>
+  <p>Tu navegador no implementa el elemento audio</p>
+</audio>
+
+<div id="wrapper">
+  <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
+  <div class="menu">
+    <label class="menu-toggle" for="menu"><span>Toggle</span></label>
+    <ul>
+      <li>
+        <a href="#">Menu</a>
+      </li>
+      <li>
+      	<a ng-click="">Próximos</a>
+      </li>
+      <li>
+      	<a ng-click="">Pasados</a>
+      </li>
+      <li>
+        <a ng-click="$eventos.imprimir()">Imprimir</a>
+      </li>
+    </ul>
+  </div>
+</div> <!-- #wrapper-->
+
+<div class="container mycontainer">
+    <h3 id="h3-cards" class="h3-marks">Todos los eventos</h3>
+
+    <div class="card-columns one-ui-kit-example-container">
+        <div class="card text-xs-center">
+          <div class="card-header">
+            Featured
+          </div>
+          <div class="card-block">
+            <h4 class="card-title">Special title treatment</h4>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+          <div class="card-footer text-muted">
+            2 days ago
+          </div>
+        </div>
+        
+        <div class="card card-inverse">
+          <img class="card-img" style="width:100%;" src="https://unsplash.it/253/212/?image=855" alt="Card image">
+          <div class="card-img-overlay">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+
+        <div class="card text-xs-center">
+          <div class="card-block">
+            <blockquote class="card-blockquote">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+            <div class="card-block">
+              <button class="btn btn-danger-rounded-outline">Check out this btn</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card-img-top" style="width:100%;" src="https://unsplash.it/318/180/?image=964" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-info btn-block">Button</a>
+          </div>
+        </div>
+
+        <div class="card card-inverse">
+          <img class="card-img" style="width:100%;" src="https://unsplash.it/253/212/?image=911" alt="Card image">
+          <div class="card-img-overlay">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+
+        <div class="card card-danger card-inverse text-xs-center">
+          <div class="card-block">
+            <blockquote class="card-blockquote">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="card card-success card-inverse text-xs-center">
+          <div class="card-block">
+            <blockquote class="card-blockquote">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+    </div><!-- /card-columns -->
+  </div> <!-- /container for CARDS -->
