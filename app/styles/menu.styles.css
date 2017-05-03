@@ -39,6 +39,18 @@ label:focus {
   text-indent: -9999px;
   background: #fff url(../images/menu-alt-512.png) 50% 50%/25px 25px no-repeat;
 }
+
+.menu label.go-back {
+  position: absolute;
+  right: -60px;
+  width: 60px;
+  height: 60px;
+  line-height: 0px;
+  display: block;
+  padding: 0;
+  text-indent: -9999px;
+  background: #fff url(../images/go-back.png) 50% 50%/25px 25px no-repeat;
+}
 .menu ul li > label {
   background: url(../images/icon-arrow-right-b-128.png) 95% 50%/16px 16px no-repeat;
 }

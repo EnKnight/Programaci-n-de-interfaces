@@ -7,7 +7,7 @@
 
 body {
   padding: 0;
-  overflow-y: hidden;
+  /*overflow-y: hidden;*/
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */

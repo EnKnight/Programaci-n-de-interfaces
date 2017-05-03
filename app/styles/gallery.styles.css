@@ -5,7 +5,7 @@
 @media (min-width: 768px){
   .mycontainer{
     max-height: 750px;
-    overflow-y: scroll;
+    /*overflow-y: scroll;*/
   }
 }
 

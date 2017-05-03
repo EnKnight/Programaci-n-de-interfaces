@@ -1,18 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url(http://fonts.googleapis.com/css?family=Montserrat:700);
-/*
-h1 {
-  text-align: center;
-  font-family: Montserrat,sans-serif;
-  color: #333;
-}*/
 
 .accordion {
   width: 80%;
-  max-width: 800px;
-  height: 250px;
+  max-width: 700px;
+  height: 350px;
   overflow: hidden;
   margin: 50px auto;
+  margin-top: 100px;
+  /*margin-left: 300px;*/
 }
 .accordion ul {
   width: 100%;
@@ -77,22 +73,19 @@ h1 {
   font-size: 13.5px;
 }
 .accordion ul li:nth-child(1) {
-  background-image: url("../images/dis4.jpg");
+  background-image: url("../images/disciplines/aereo.jpg");
 }
 .accordion ul li:nth-child(2) {
-  background-image: url("../images/dis1.jpg");
+  background-image: url("../images/disciplines/ballet.jpg");
 }
 .accordion ul li:nth-child(3) {
-  background-image: url("../images/dis2.jpg");
+  background-image: url("../images/disciplines/contemporaneo.jpg");
 }
 .accordion ul li:nth-child(4) {
-  background-image: url("../images/dis3.jpg");
+  background-image: url("../images/disciplines/hip-hop.jpg");
 }
 .accordion ul li:nth-child(5) {
-  background-image: url("../images/dis5.jpg");
-}
-.accordion ul li:nth-child(6) {
-  background-image: url("../images/galeria1.jpg");
+  background-image: url("../images/disciplines/jazz.jpg");
 }
 .accordion ul:hover li {
   width: 8%;

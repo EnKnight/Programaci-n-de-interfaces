@@ -53,7 +53,7 @@ body{
   transition:transform .4s .15s, -webkit-transform .4s .15s;
 }
 .gallery:nth-child(1) div{
-  background-image: url('../images/galeria9.jpg');
+  background-image: url('../images/gallery/jazz.jpg');
 }
 .gallery:nth-child(2){
   border-radius:0 40vmin 0 0;
@@ -66,7 +66,7 @@ body{
   transition:transform .4s .2s, -webkit-transform .4s .2s;
 }
 .gallery:nth-child(2) div{
-  background-image: url('../images/galeria7.jpg');
+  background-image: url('../images/gallery/ballet.jpg');
 }
 .gallery:nth-child(3){
   border-radius:0 0 0 40vmin;
@@ -79,7 +79,7 @@ body{
   transition:transform .4s .25s, -webkit-transform .4s .25s;
 }
 .gallery:nth-child(3) div{
-  background-image: url('../images/galeria10.jpg');
+  background-image: url('../images/gallery/hip-hop.jpg');
 }
 .gallery:nth-child(4){
   border-radius:0 0 40vmin 0;
@@ -93,7 +93,7 @@ body{
   transition:transform .4s .3s, -webkit-transform .4s .3s;
 }
 .gallery:nth-child(4) div{
-  background-image: url('../images/galeria2.jpg');
+  background-image: url('../images/gallery/aereo.jpg');
 }
 .gallery:nth-child(5){
   width:55%;
@@ -105,7 +105,7 @@ body{
           transform:scale(1);
 }
 .gallery:nth-child(5) div{
-  background-image: url('../images/galeria5.jpg');
+  background-image: url('../images/gallery/contemporaneo.jpg');
 }
 
 #span1{
