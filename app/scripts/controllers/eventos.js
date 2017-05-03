@@ -14,4 +14,14 @@ angular.module('proyectoFinalApp')
     	// console.log("Ver Ballet");
     	$location.path("/printEvents");
     };
+
+    $ctrl.verGaleriaEventos = function(){
+    	$location.path("/galleryBallet");
+    };
+
+    $ctrl.verDisciplinas = function(){
+    	$location.path("/disciplineJazz");
+    };
+
+
   });
