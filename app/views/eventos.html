@@ -1,4 +1,4 @@
-<audio src="audio/eventos.wav" autoplay>
+<audio id="eventos_audio" src="audio/eventos.wav">
   <p>Tu navegador no implementa el elemento audio</p>
 </audio>
 
@@ -21,7 +21,16 @@
 </div> <!-- #wrapper-->
 
 <div class="container mycontainer">
-    <h3 id="h3-cards" class="h3-marks">Todos los eventos</h3>
+  <div class="row">
+    <div class="col-md-4">
+      <h3 id="h3-cards" class="h3-marks">Todos los eventos</h3>
+    </div>
+    <div class="col-md-1 col-md-offset-6">
+        <br><br>
+        <button type="button" class="btn btn-default btn-xs" onclick="Audio('eventos_audio','Volume_White.svg','Volume-off_White.svg')">
+        <img id="sound_img" src="images/Volume_White.svg" alt=""> 
+    </div>
+  </div>
 
     <div class="card-columns one-ui-kit-example-container">
         <!-- <div class="card text-xs-center">

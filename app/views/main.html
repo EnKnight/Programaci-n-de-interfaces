@@ -1,14 +1,21 @@
-<audio src="audio/bienvenido.wav" autoplay>
+<audio id="bienvenido" src="audio/bienvenido.wav">
   <p>Tu navegador no implementa el elemento audio</p>
 </audio>
 
 <div class="encabezado">
+  <div class="row">
+    <div class="col-md-2 col-md-offset-6">
+      <button type="button" class="btn btn-default btn-xs" onclick="Audio('bienvenido','Volume.svg','Volume-off.svg')">
+        <img id="sound_img" src="images/Volume.svg" alt=""> 
+      </button>
+    </div>  
+  </div>
   <img class="foto" src="images/logo.jpg" alt="">      
 </div>
 
 <div class="container welcome-container">
   <div class="col-md-4">
-    <button class="btn-lg boton" ng-click="$menu.ver">Alumnos</button><br>
+    <button class="btn-lg boton" ng-click="$menu.verAlumnos()">Alumnos</button><br>
     <button class="btn-lg boton" ng-click="$menu.verEventos()">Eventos</button><br>
     <button class="btn-lg boton" ng-click="$menu.verGaleria()">Galería</button><br>
   </div>
