@@ -6,8 +6,16 @@
 }
 
 body {
-  padding: 0;
-  /*overflow-y: hidden;*/
+  /*padding: 0;*/
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+@media (min-width: 768px){
+  .mycontainer{
+    margin-top: 50px;
+    overflow-y: hidden;
+  }
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */

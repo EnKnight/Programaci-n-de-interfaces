@@ -2,7 +2,9 @@
   max-height: 450px;
   overflow-y: scroll;
 }*/
-
+.boton-costado{
+  margin-top: 250px;
+}
 .h3-marks {
         margin: 25px 0;
         color: #D6D6D6;
@@ -12,6 +14,9 @@
   text-align: center !important; 
 }
 
+.botones-eventos{
+  margin: 0 auto;
+}
 .text-muted {
   color: #818a91; 
 }      

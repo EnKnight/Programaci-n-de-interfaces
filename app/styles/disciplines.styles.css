@@ -7,7 +7,7 @@
   height: 350px;
   overflow: hidden;
   margin: 50px auto;
-  margin-top: 100px;
+  /*margin-top: 100px;*/
   /*margin-left: 300px;*/
 }
 .accordion ul {
@@ -31,6 +31,39 @@
   display: block;
   overflow: hidden;
   width: 100%;
+}
+
+.discipline-image{
+  position: relative;
+  width: 400px;
+  height: 200px;
+}
+
+.discipline-image-card > div{
+  /*width: 300px;*/
+  width: 100%;
+  position: relative;
+  bottom: 30px;
+  color: #ffffff;
+  background-color: #000;
+  padding: 2px 10px;
+  opacity: 0.8;
+  font-weight: bold;
+}
+
+.discipline-image-card{
+  width: 400px;
+  height: 200px;
+  margin-top: 20px;
+  position: relative;
+  z-index: 3;
+  vertical-align: bottom;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  font-family: Open Sans, sans-serif;
+  transition: all 200ms ease;
 }
 .accordion ul li div a {
   display: block;

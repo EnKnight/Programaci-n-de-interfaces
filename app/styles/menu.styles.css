@@ -23,7 +23,7 @@ label:focus {
   top: 0;
   left: 0;
   background: #fff;
-  width: 240px;
+  width: 200px;
   height: 100%;
   transform: translate3d(-240px, 0, 0);
   transition: transform 0.35s;
@@ -40,11 +40,19 @@ label:focus {
   background: #fff url(../images/menu-alt-512.png) 50% 50%/25px 25px no-repeat;
 }
 
+.margen-arriba{
+  top: 40px;
+}
+
+.margen-arriba-disciplinas{
+  top: 60px;
+}
 .menu label.go-back {
+  /*margin-left: 25px;*/
   position: absolute;
-  right: -60px;
-  width: 60px;
-  height: 60px;
+  right: -160px;
+  width: 80px;
+  height: 80px;
   line-height: 0px;
   display: block;
   padding: 0;

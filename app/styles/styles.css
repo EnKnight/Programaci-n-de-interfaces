@@ -7,9 +7,9 @@ and open the template in the editor.
     Created on : 29-mar-2017, 12:20:39
     Author     : rafael
 */
-.welcome-container{
+/*.welcome-container{
   margin-top: 120px;
-}
+}*/
 .fondo{
     background: url(../images/dark_embroidery.png);
     background-attachment: fixed;
@@ -49,7 +49,7 @@ and open the template in the editor.
   padding: 10px 20px 10px 20px;
   margin: 10px 10px 10px 10px;
   text-decoration: none;
-  width: 200px;
+  width: 180px;
 }
 
 .info{
