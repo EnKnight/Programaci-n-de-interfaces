@@ -1,103 +1,159 @@
-<div id="wrapper" >
+<script type="text/javascript" src="scripts/disciplines.effects.js"/>
+
+<div id="wrapper">
   <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
   <div class="menu">
-    <label class="menu-toggle" for="menu"><span>Toggle</span></label>
-    <ul>
-      <li>
-        <a href="#">Menu</a>
-      </li>
-    </ul>
+    <label class="go-back margen-arriba-disciplinas" for="menu" ng-click="$historia.verMenu()"><span>Toggle</span></label>
   </div>
 </div> <!-- #wrapper-->
 
-<div class="timeline-container" id="timeline-1">
-  <div class="timeline-header">
-    <h2 class="timeline-header__title">Mustafa Kemal Atatürk</h2>
-    <h3 class="timeline-header__subtitle">FATHER OF THE TURKS</h3>
-  </div>
-  <div class="timeline">
-    <div class="timeline-item" data-text="FATHER OF THE TURKS">
-      <div class="timeline__content"><img class="timeline__img" src="http://i.cdn.ensonhaber.com/resimler/diger/ataturk_3473.jpg"/>
-        <h2 class="timeline__content-title">1881</h2>
-        <p class="timeline__content-desc">He was born in 1881 (probably in the spring) in Salonica, then an Ottoman city, now inGreece. His father Ali Riza, a customs official turned lumber merchant, died when Mustafawas still a boy. His mother Zubeyde, adevout and strong-willed woman, raised him and his sister.</p>
+<svg id="icons" xmlns="http://www.w3.org/2000/svg">  
+  <symbol id="icon-arrow" viewBox="0 0 476.213 476.213" >
+  <polygon fill="inherit" points="347.5,324.393 253.353,418.541 253.353,0 223.353,0 223.353,419.033 128.713,324.393 107.5,345.607 
+  238.107,476.213 368.713,345.606 "/>
+  </symbol>
+</svg>
+
+<div class="row">
+  <br><br><br>
+  <div class="slider-content container-single-discipline">
+    <div class="header-wrapper">
+      <div class="header">
+        <div class="logo-wrapper">
+          <div class="logo"> DCA</div>
+        </div>
+        <div class="shop-wrapper"></div>
       </div>
     </div>
-    <div class="timeline-item" data-text="FATHER OF THE TURKS">
-      <div class="timeline__content"><img class="timeline__img" src="http://gazetemanifesto.com/wp-content/uploads/2015/11/mustafa-kemal.jpg"/>
-        <h2 class="timeline__content-title">1893</h2>
-        <p class="timeline__content-desc">First enrolled in a traditionalreligious school, he soon switched to a modern school. In 1893, he entered a military highschool where his mathematics teacher gave him the second name Kemal (meaning perfection)in recognition of young Mustafa's superior achievement.</p>
+    
+    <div class="number-wrapper">
+      <div class="number-count">
+        <div class="number">01</div>
       </div>
     </div>
-    <div class="timeline-item" data-text="FATHER OF THE TURKS">
-      <div class="timeline__content"><img class="timeline__img" src="https://upload.wikimedia.org/wikipedia/commons/2/20/Ataturk-1930-amongpublic.jpg"/>
-        <h2 class="timeline__content-title">1905</h2>
-        <p class="timeline__content-desc">In 1905, Mustafa Kemal graduated from the War Academy in Istanbul with the rank of Staff Captain. Posted in Damascus, he started with several colleagues, a clandestinesociety called "Homeland and Freedom" to fight against the Sultan'sdespotism.</p>
+    
+    <div class="nav-wrapper">
+      <div class="nav-arrows">
+        <div class="nav-up">
+          <button class ="btn" id="arrow-up">Anterior</button>
+             <!-- <svg id="arrow-up">
+              <use xlink:href="#icon-arrow"></use>
+            </svg> -->
+         </div>
+        <div class="nav-line"></div>
+        <div class="nav-down">
+        <button class ="btn" id="arrow-up">Siguiente</button>
+           <!-- <svg id="arrow-down">
+              <use xlink:href="#icon-arrow"></use>
+            </svg> -->
+        </div>
       </div>
-    </div>
-    <div class="timeline-item" data-text="FATHER OF THE TURKS">
-      <div class="timeline__content"><img class="timeline__img" src="http://cdn.yemek.com/uploads/2014/11/ataturk-10-kasim.jpg"/>
-        <h2 class="timeline__content-title">1908</h2>
-        <p class="timeline__content-desc">In 1908 he helped the group of officers who toppled the Sultan. Mustafa Kemal'scareer flourished as he won his heroism in the far corners of the Ottoman Empire,including Albania and Tripoli. He also briefly served as a staff officer in Salonica andIstanbul and as a military attache in Sofia.</p>
-      </div>
-    </div>
-    <div class="timeline-item" data-text="FATHER OF THE TURKS">
-      <div class="timeline__content"><img class="timeline__img" src="http://ataturk.istanbul.gov.tr/GalleryLibrary/12.jpg"/>
-        <h2 class="timeline__content-title">1915</h2>
-        <p class="timeline__content-desc">In 1915, when Dardanelles campaign was launched, Colonel Mustafa Kemal became anational hero by winning successive victories and finally repelling the invaders.</p>
-      </div>
-    </div>
-    <div class="timeline-item" data-text="FATHER OF THE TURKS">
-      <div class="timeline__content"><img class="timeline__img" src="http://gcube.milliyet.com.tr/Detail/2016/01/04/ataturk-un-yeni-fotograflari-ataturk-mustafa-kemal-ataturk-1533128.jpg"/>
-        <h2 class="timeline__content-title">1916</h2>
-        <p class="timeline__content-desc">Promotedto general in 1916, at age 35, he liberated two major provinces in eastern Turkey thatyear. In the next two years, he served as commander of several Ottoman armies inPalestine, Aleppo, and elsewhere, achieving another major victory by stopping the enemyadvance at Aleppo.</p>
-      </div>
-    </div>
-    <div class="timeline-item" data-text="FATHER OF THE TURKS">
-      <div class="timeline__content"><img class="timeline__img" src="http://manisanokta.com/wp-content/uploads/2014/07/ataturk-20.jpg"/>
-        <h2 class="timeline__content-title">1919</h2>
-        <p class="timeline__content-desc">On May 19, 1919, Mustafa Kemal Pasha landed in the Black Sea port of Samsun to startthe War of Independence. In defiance of the Sultan's government, he rallied a liberationarmy in Anatolia and convened the Congress of Erzurum and Sivas which established thebasis for the new national effort under his leadership.</p>
-      </div>
-    </div>
-    <div class="timeline-item" data-text="FATHER OF THE TURKS">
-      <div class="timeline__content"><img class="timeline__img" src="http://www.volpeypir.com/upload/3732.jpg"/>
-        <h2 class="timeline__content-title">1920</h2>
-        <p class="timeline__content-desc">
-          On April 23, 1920, the GrandNational Assembly was inaugurated. Mustafa Kemal Pasha was elected to its Presidency.
-          Fighting on many fronts, he led his forces to victory against rebels and invadingarmies. Following the Turkish triumph at the two major battles at Inonu in Western Turkey,the Grand National Assembly conferred on Mustafa Kemal Pasha the title ofCommander-in-Chief with the rank of Marshal.
-        </p>
-      </div>
-    </div>
-    <div class="timeline-item" data-text="FATHER OF THE TURKS">
-      <div class="timeline__content"><img class="timeline__img" src="http://sanatkaravani.com/wp-content/uploads/2015/11/ataturk-4.jpg"/>
-        <h2 class="timeline__content-title">1922</h2>
-        <p class="timeline__content-desc">At the end of August 1922, the Turkish armieswon their ultimate victory. Within a few weeks, the Turkish mainland was completelyliberated, the armistice signed, and the rule of the Ottoman dynasty abolished</p>
-      </div>
-    </div>
-    <div class="timeline-item" data-text="FATHER OF THE TURKS">
-      <div class="timeline__content"><img class="timeline__img" src="https://turkcetarih.com/wp-content/uploads/2015/05/Atat%C3%BCrkveCumhuriyet.jpg"/>
-        <h2 class="timeline__content-title">1923</h2>
-        <p class="timeline__content-desc">In July 1923, the national government signed the Lausanne Treaty with Great Britain,France, Greece, Italy, and others. In mid-October, Ankara became the capital of the new Turkish State. On October 29, the Republic was proclaimed and Mustafa Kemal Pasha wasunanimously elected President of the Republic.</p>
-      </div>
-    </div>
-    <div class="timeline-item" data-text="FATHER OF THE TURKS">
-      <div class="timeline__content"><img class="timeline__img" src="http://pbs.twimg.com/media/Cw69H8pXUAEaSqa.jpg"/>
-        <h2 class="timeline__content-title">1934</h2>
-        <p class="timeline__content-desc">
-          The account of Atatürk's fifteen year Presidency is a saga of dramatic modernization.With indefatigable determination, he created a new political and legal system, abolished the Caliphate and made both government and education secular, gave equal rights to women,changed the alphabet and the attire, and advanced the arts and the sciences, agricultureand industry.
-          In 1934, when the surname law was adopted, the national parliament gave him the name <i><strong>"Atatürk" (Father of the Turks)</strong></i>
-        </p>
-      </div>
-    </div>
-    <div class="timeline-item" data-text="FATHER OF THE TURKS">
-      <div class="timeline__content"><img class="timeline__img" src="http://www.bik.gov.tr/wp-content/uploads/2016/11/20161110_2_20037273_15856882.jpg?fit=1024%2C863"/>
-        <h2 class="timeline__content-title">1938</h2>
-        <p class="timeline__content-desc">On November 10, 1938, following an illness of a few months, the national liberator and the Father of modern Turkey died. But his legacy to his people and to the world endures.</p>
+    </div>    
+    <div class="slider-wrapper">
+      <div class="slider-container">                       
+        <div class="slide active" data-order="1">
+          <div class="slide-content txt">
+            <div class="txt-wrapper">
+              <h2><span>Danza Aérea</span></h2>
+              <span class="subtitle">Nuestros brazos comienzan en la espalda porque una vez fueron alas</span>
+              <p class="excerpt"><span>"Martha Graham."</span><br><br>La Danza Aérea (Acrobacia en tela o Gimnasia aérea) es resultado de un proceso de transformación de distintas disciplinas artísticas y deportivas que combinan la danza contemporánea con las artes circenses, las acrobacias, el ballet y el teatro.</p>
+            </div>
+          </div>
+          <div class="slide-content img">
+            <img src="images/disciplines/aereo/1.jpeg">
+          </div>
+        </div>  
+        <div class="slide" data-order="2">
+          <div class="slide-content txt">
+            <div class="txt-wrapper">
+              <h2>Horario</h2>
+               <p class="excerpt">Martes 6:00 - 8:00 <br> Jueves 6:00 - 8:00 </p>  
+               <!-- <button>Shop now</button> -->
+            </div>
+          </div>
+          <div class="slide-content img">
+            <img src="images/disciplines/aereo/2.jpg">
+          </div>
+        </div>
+        <div class="slide" data-order="3">
+          <div class="slide-content txt">
+            <div class="txt-wrapper">
+              <h2>Horario</h2>
+               <p class="excerpt">Martes 6:00 - 8:00 <br> Jueves 6:00 - 8:00 </p>  
+               <!-- <button>Shop now</button> -->
+            </div>
+          </div>
+          <div class="slide-content img">
+            <img src="images/disciplines/aereo/1.jpeg">
+          </div>
+        </div>  
       </div>
     </div>
   </div>
 </div>
-<script type="text/javascript">
-console.log("Holis :D");
+
+
+<!-- <div class="timeline-container" id="timeline-1">
+  
+  <div class="timeline-header">
+    <h2 class="timeline-header__title">ACADEMIA DANZA COREOGRAFÍA Y ACROBACIA</h2>
+    <h3 class="timeline-header__subtitle">Donde tu pasión es tu estilo de vida</h3>
+  </div> -->
+  <!-- <div id="wrapper">
+    <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
+    <div class="menu">
+      <label class="go-back" for="menu" ng-click="$historia.verMenu()"></label>
+    </div>
+  </div> --> <!-- #wrapper-->
+  <!-- <div class="timeline">
+  
+    <div class="timeline-item" data-text="ACADEMIA DANZA COREOGRAFÍA Y ACROBACIA">
+      <div class="timeline__content"><img class="timeline__img" src="images/time-line/1.jpg"/>
+        <h2 class="timeline__content-title">2010</h2>
+        <p class="timeline__content-desc">El 13 de septiembre la Escuela de Danza DCA, abre sus puertas por primera vez al público dirigido a niñas, niños y personas adultas, con la finalidad de dar a conocer el arte y fomentar cultura para la sociedad.</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="ACADEMIA DANZA COREOGRAFÍA Y ACROBACIA">
+      <div class="timeline__content"><img class="timeline__img" src="images/time-line/2.jpg"/>
+        <h2 class="timeline__content-title">2011</h2>
+        <p class="timeline__content-desc">En Enero hacen su primera aparición al publico en el teatro alameda invitando a todo el publico de todas las edades a ver su trabajo, dicha precentacion fue muy exitosa debido a que después de ella recibieron varios alumnos nuevos llenos de ambición por aprender danza.</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="ACADEMIA DANZA COREOGRAFÍA Y ACROBACIA">
+      <div class="timeline__content"><img class="timeline__img" src="images/time-line/3.jpg"/>
+        <h2 class="timeline__content-title">2012</h2>
+        <p class="timeline__content-desc">La escuela de danza incluye HIP-HOP como una de las clases a impartir  debido a que los profesores de la escuela hicieron una  precentacion al publico con este tipo de baile y la reacción del publico fue conmovedora y es asi como abren esta clase.</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="ACADEMIA DANZA COREOGRAFÍA Y ACROBACIA">
+      <div class="timeline__content"><img class="timeline__img" src="images/time-line/4.jpg"/>
+        <h2 class="timeline__content-title">2013</h2>
+        <p class="timeline__content-desc">El equipo de DCA junto con los alumnos organizan un evento de caridad en el teatro de el seguro social en donde todas sus reacudaciones fueron donadas a la ciudad de los niños en cobijas y objetos de uso personal personales, dicho evento lleno de emoción a los participantes de la escuela de baile.</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="ACADEMIA DANZA COREOGRAFÍA Y ACROBACIA">
+      <div class="timeline__content"><img class="timeline__img" src="images/time-line/5.jpg"/>
+        <h2 class="timeline__content-title">2014</h2>
+        <p class="timeline__content-desc">Grupo DCA se cambia de escuela, inauguran su nueva escuela ubicada actualmente en Blvd. Juan Pablo II # 1094 Aguascalientes, Mexico con un gran festejo lleno de comida y dulces para los alumnos y maestros de la institución, dicho festejo fue un gran éxito.</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="ACADEMIA DANZA COREOGRAFÍA Y ACROBACIA">
+      <div class="timeline__content"><img class="timeline__img" src="images/time-line/6.jpg"/>
+        <h2 class="timeline__content-title">2015</h2>
+        <p class="timeline__content-desc">DCA participa en la muestra regional de danza avanzando a la segunda etapa donde solo los mejores grupos de danza se precentan.</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="ACADEMIA DANZA COREOGRAFÍA Y ACROBACIA">
+      <div class="timeline__content"><img class="timeline__img" src="images/time-line/1.jpg"/>
+        <h2 class="timeline__content-title">2016</h2>
+        <p class="timeline__content-desc">Por primera vez Grupo DCA sale de el  estado. Grupo DCA viaja a guadalajara a hacer su primer precentacion estatal la cual estuvo llena de estrés y alegría pero con un final muy feliz y conmovedor ya que alumnos y maestros llegaron con una gran sonrisa por precentar en otro estado .</p>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- <script type="text/javascript">
+// console.log("Holis :D");
 	(function($) {
   $.fn.timeline = function() {
     var selectors = {
@@ -133,4 +189,4 @@ console.log("Holis :D");
   }
 })(jQuery);
 $("#timeline-1").timeline();
-</script>
+</script> -->

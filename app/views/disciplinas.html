@@ -1,16 +1,45 @@
-<div id="wrapper">
-  <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
-  <div class="menu">
-    <label class="menu-toggle" for="menu"><span>Toggle</span></label>
-    <ul>
-      <li>
-        <a href="#">Menu</a>
-      </li>
-    </ul>
-  </div>
-</div> <!-- #wrapper-->
+<audio src="audio/disciplinas.wav" autoplay>
+  <p>Tu navegador no implementa el elemento audio</p>
+</audio>
 
-<div class="accordion">
+<div class="row">
+  <div class="col-md-2">
+    <div id="wrapper">
+      <!-- <input type="checkbox" id="menu" name="menu" class="menu-checkbox"> -->
+      <div class="menu">
+        <label class="go-back margen-arriba" for="menu" ng-click="$dis.verMenu()"><span>Toggle</span></label>
+      </div>
+    </div> <!-- #wrapper-->
+  </div>
+<!-- <div class="row container"> -->
+  <div class="col-md-5">
+    <div class="discipline-image-card">
+      <img ng-click="$dis.verAereo()" class="discipline-image" src="images/disciplines/aereo.jpg">
+      <div>Leer información de aereo</div>
+    </div>
+    <div class="discipline-image-card">
+      <img ng-click="$dis.verBallet()" class="discipline-image" src="images/disciplines/ballet.jpg">
+      <div>Leer información de ballet</div>
+    </div>
+    <div class="discipline-image-card">
+      <img ng-click="$dis.verContemporaneo()" class="discipline-image" src="images/disciplines/contemporaneo.jpg">
+      <div>Leer información de contemporáneo</div>
+    </div>
+  </div>
+  <div class="col-md-5">
+    <div class="discipline-image-card">
+      <img ng-click="$dis.verHipHop()" class="discipline-image" src="images/disciplines/hip-hop.jpg">
+      <div>Leer información de hip hop</div>
+    </div>
+    <div class="discipline-image-card">
+      <img ng-click="$dis.verJazz()" class="discipline-image" src="images/disciplines/jazz.jpg">
+      <div>Leer información de jazz</div>
+    </div>
+  </div>
+<!-- </div> -->
+</div>
+
+<!-- <div class="accordion">
   <ul>
     <li>
       <div>
@@ -53,4 +82,4 @@
       </div>
     </li>
   </ul>
-</div>
+</div> -->

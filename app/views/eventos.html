@@ -2,25 +2,20 @@
   <p>Tu navegador no implementa el elemento audio</p>
 </audio>
 
+ 
+
+<!-- <div class="container mycontainer"> -->
+<div class="col-md-2 col-sm-2">
+<!-- <br><br><br><br><br><br><br> -->
 <div id="wrapper">
   <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
   <div class="menu">
-    <label class="menu-toggle" for="menu"><span>Toggle</span></label>
-    <ul>
-      <li>
-        <a href="#">Menu</a>
-      </li>
-      <li>
-      	<a ng-click="">Próximos</a>
-      </li>
-      <li>
-        <a ng-click="$eventos.imprimir()">Imprimir</a>
-      </li>
-    </ul>
+    <label class="go-back margen-arriba" for="menu" ng-click="$eventos.verMenu()"><span>Toggle</span></label>
   </div>
-</div> <!-- #wrapper-->
-
-<div class="container mycontainer">
+</div>  --><!-- #wrapper -->
+  <button class="boton boton-costado">Pasados</button>
+</div>
+<div class="col-md-8 col-sm-8">
     <h3 id="h3-cards" class="h3-marks">Todos los eventos</h3>
 
     <div class="card-columns one-ui-kit-example-container">
@@ -90,5 +85,24 @@
             <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
           </div>
         </div>
-    </div><!-- /card-columns -->
-  </div> <!-- /container for CARDS -->
+    <!-- /card-columns -->
+    </div>
+  <!-- /container for CARDS -->
+  </div>
+  <div class="col-md-2 col-sm-2">
+  <!-- <br><br><br><br><br><br><br> -->
+  <br><br>
+  <button class="boton boton-costado">Próximos</button>
+</div>
+  <!-- </div>  -->
+  <!-- <div class="container">
+    <div class="col-md-4 col-sm-4">
+      <button class="btn btn-primary">Próximos</button>
+    </div>
+    <div class="col-md-4 col-sm-4">
+      <button class="btn btn-primary">Próximos</button>
+    </div>
+    <div class="col-md-4 col-sm-4">
+      <button class="btn btn-primary">Próximos</button>
+    </div>
+  </div> -->
