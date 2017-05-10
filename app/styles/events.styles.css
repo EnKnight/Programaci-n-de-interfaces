@@ -3,8 +3,15 @@
   overflow-y: scroll;
 }*/
 .boton-costado{
-  margin-top: 250px;
+  margin-top: 40px;
 }
+
+.boton-costado-imprimir{
+  margin-top: 260px;
+}
+
+
+
 .h3-marks {
         margin: 25px 0;
         color: #D6D6D6;

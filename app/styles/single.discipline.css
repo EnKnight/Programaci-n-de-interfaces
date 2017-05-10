@@ -69,12 +69,12 @@
 }
 .header-wrapper .logo {
   display: block;
-  font-size: 2rem;
+  font-size: 5rem;
   font-weight: bold;
   margin-top: 3rem;
   line-height: 1;
   font-weight: 600;
-  color: #939393;
+  color: #cacaca;
   text-align: center;
 }
 .header-wrapper .logo span {
@@ -292,14 +292,14 @@
   color: #AEACAB;
   font-weight: bold;
   letter-spacing: 0.3rem;
-  font-size: 1.2rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
   text-align: justify;
 }
 .slider-container .slide-content .txt-wrapper p.excerpt {
   margin: 0;
   color: #AEACAB;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   line-height: 1.5;
   text-align: justify;
 }
