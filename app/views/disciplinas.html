@@ -1,4 +1,4 @@
-<audio src="audio/disciplinas.wav" autoplay>
+<audio id="disciplinas" src="audio/disciplinas.wav">
   <p>Tu navegador no implementa el elemento audio</p>
 </audio>
 
@@ -10,6 +10,10 @@
         <label class="go-back margen-arriba" for="menu" ng-click="$dis.verMenu()"><span>Toggle</span></label>
       </div>
     </div> <!-- #wrapper-->
+
+    <button type="button" class="boton-audio boton-audio-menu" onclick="Audio('disciplinas','Volume.svg','Volume-off.svg')">
+      <img id="sound_img" src="images/Volume-off.svg" alt=""> 
+    </button>
   </div>
 <!-- <div class="row container"> -->
   <div class="col-md-5 col-sm-5">

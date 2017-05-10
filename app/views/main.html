@@ -16,7 +16,11 @@
     <button class="btn-lg boton" ng-click="$menu.verEventos()">Eventos</button><br><br>
     <button class="btn-lg boton" ng-click="$menu.verGaleria()">Galería</button><br><br>
   </div>
-  <div class="col-md-4 col-sm-4"></div>
+  <div class="col-md-4 col-sm-4">
+    <button type="button" class="boton-audio boton-audio-menu-inicio" onclick="Audio('bienvenido','Volume.svg','Volume-off.svg')">
+      <img id="sound_img" src="images/Volume-off.svg" alt=""> 
+    </button>
+  </div>
   <div class="col-md-4 col-sm-4">
   <br><br>
     <button class="btn-lg boton" ng-click="$menu.ver">Maestros</button><br><br>
@@ -25,7 +29,7 @@
   </div>
 </div>
 
-<div class="row">
+<!-- <div class="row">
   <div class="col-md-2">
     
   </div>
@@ -42,10 +46,8 @@
     
   </div>
   <div class="col-md-2">
-    <div class="col-md-2 col-md-offset-6">
       <button type="button" class="btn btn-default btn-xs" onclick="Audio('bienvenido','Volume.svg','Volume-off.svg')">
         <img id="sound_img" src="images/Volume-off.svg" alt=""> 
       </button>
-    </div>  
   </div>
-</div>
+</div> -->
