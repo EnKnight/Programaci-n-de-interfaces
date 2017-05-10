@@ -39,4 +39,8 @@ angular.module('proyectoFinalApp')
     	// console.log("Ver Historia");
     	$location.path("/galeria");
     };
+
+    $ctrl.verMenu = function(){
+      $location.path("/");
+    };
   });

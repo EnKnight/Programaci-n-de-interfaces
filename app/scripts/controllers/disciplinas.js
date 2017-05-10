@@ -38,4 +38,8 @@ angular.module('proyectoFinalApp')
     $ctrl.verDisciplinas = function(){
     	$location.path("/disciplinas");
     };
+
+    $ctrl.verMenu = function(){
+      $location.path("/");
+    };
   });

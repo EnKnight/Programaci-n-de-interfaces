@@ -66,6 +66,11 @@ angular
         controller: 'EventosCtrl',
         controllerAs: '$eventos'
       })
+      .when('/eventosPasados',{
+        templateUrl: 'views/eventospasados.html',
+        controller: 'EventosCtrl',
+        controllerAs: '$eventos'
+      })
       .when('/printEvents',{
         templateUrl: 'views/printevents.html',
         controller: 'EventosCtrl',
@@ -73,8 +78,8 @@ angular
       })
       .when('/historia', {
         templateUrl: 'views/historia.html',
-        controller: 'MainmenuCtrl',
-        controllerAs: '$menu'
+        controller: 'HistoriaCtrl',
+        controllerAs: '$historia'
       })
       .when('/galeria', {
         templateUrl: 'views/galeria.html',
