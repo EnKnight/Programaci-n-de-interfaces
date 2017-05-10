@@ -1,0 +1,62 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29-mar-2017, 12:20:39
+    Author     : rafael
+*/
+.welcome-container{
+  margin-top: 120px;
+}
+.fondo{
+    background: url(../images/dark_embroidery.png);
+    background-attachment: fixed;
+}
+
+.encabezado{
+    background: url(../images/eight_horns.png);
+    text-align: center;
+    padding: 40px;
+}
+
+.encabezado .foto{
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.boton{
+	/*margin: 10px;
+	width: 150px;
+	padding: 5px;*/
+    background: #e4eef5;
+  background-image: -webkit-linear-gradient(top, #e4eef5, #c4c4c4);
+  background-image: -moz-linear-gradient(top, #e4eef5, #c4c4c4);
+  background-image: -ms-linear-gradient(top, #e4eef5, #c4c4c4);
+  background-image: -o-linear-gradient(top, #e4eef5, #c4c4c4);
+  background-image: linear-gradient(to bottom, #e4eef5, #c4c4c4);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 1px 1px 3px #666666;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 30px;
+  padding: 10px 20px 10px 20px;
+  margin: 10px 10px 10px 10px;
+  text-decoration: none;
+  width: 200px;
+}
+
+.info{
+    color: #C8C8C8;
+    text-align: justify;
+    padding: 2px;
+    margin: 2px;
+    font-size: 25px;
+    font-family: 'Harrington';
+}
