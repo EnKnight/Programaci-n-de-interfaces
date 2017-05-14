@@ -7,15 +7,19 @@
 }
 
 .boton-costado-imprimir{
+  display: none;
   margin-top: 260px;
 }
 
-
+.events-container{
+  margin-top: 20px;
+  height: 720px;
+}
 
 .h3-marks {
-        margin: 25px 0;
-        color: #D6D6D6;
-      }
+  margin: 25px 0;
+  color: #D6D6D6;
+}
 
 .text-xs-center {
   text-align: center !important; 
