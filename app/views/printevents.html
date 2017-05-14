@@ -5,6 +5,33 @@
     <span class="leaf3"></span>
     <span class="leaf4"></span>
   </div>
-  <span class="loading" data-name="Loading">Imprimiendo...</span>
-  
+  <span class="loading" data-name="Loading">Imprimiendo...</span>  
 </div>
+
+
+
+<!-- Progress bar HTML -->
+<!-- <div class="progress progress-striped active">
+    <div class="progress-bar"></div>
+</div> -->
+
+<!-- <print id="imprimir-simulacion"></print>		  -->
+<div class="progress progress-striped active">
+	<div class="progress-bar"></div>
+</div>
+<!-- jQuery Script -->
+<script type="text/javascript">
+    var i = 0;
+    function makeProgress(){
+        if(i < 100){
+            i = i + 1;
+            $(".progress-bar").css("width", i + "%").text(i + " %");
+        }
+        // Wait for sometime before running this script again
+        setTimeout("makeProgress()", 100);
+    }
+    makeProgress();
+    // $events.verEventosProximos();
+</script>
+
+
