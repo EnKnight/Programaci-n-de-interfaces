@@ -31,6 +31,26 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/alumnos', {
+        templateUrl: 'views/alumnos.html',
+        controller: 'AlumnosCtrl',
+        controllerAs: '$alumnos'
+      })
+      .when('/registrarAlumno', {
+        templateUrl: 'views/registraralumnos.html',
+        controller: 'AlumnosCtrl',
+        controllerAs: '$alumnos'
+      })
+      .when('/login', {
+        templateUrl: 'views/login.html',
+        controller: 'AlumnosCtrl',
+        controllerAs: '$alumnos'
+      })
+      .when('/verClases', {
+        templateUrl: 'views/verclases.html',
+        controller: 'AlumnosCtrl',
+        controllerAs: '$alumnos'
+      })
       .when('/disciplinas', {
         templateUrl: 'views/disciplinas.html',
         controller: 'DisciplinasCtrl',

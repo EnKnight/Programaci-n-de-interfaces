@@ -24,7 +24,7 @@ angular.module('proyectoFinalApp')
     };
 
     $ctrl.verAlumnos = function(){
-
+        $location.path("/alumnos");
     };
 
     $ctrl.verGaleria = function(){
