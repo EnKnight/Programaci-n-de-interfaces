@@ -1,4 +1,4 @@
-<div class="cube-wrapper">
+<div id="animacion-imprimir" class="cube-wrapper">
   <div class="cube-folding">
     <span class="leaf1"></span>
     <span class="leaf2"></span>
@@ -17,21 +17,8 @@
 
 <!-- <print id="imprimir-simulacion"></print>		  -->
 <div class="progress progress-striped active">
-	<div class="progress-bar"></div>
+	<div id="imprimiendo" class="progress-bar" print></div>
 </div>
-<!-- jQuery Script -->
-<script type="text/javascript">
-    var i = 0;
-    function makeProgress(){
-        if(i < 100){
-            i = i + 1;
-            $(".progress-bar").css("width", i + "%").text(i + " %");
-        }
-        // Wait for sometime before running this script again
-        setTimeout("makeProgress()", 100);
-    }
-    makeProgress();
-    // $events.verEventosProximos();
-</script>
+<button id="imprimir" class="boton boton-imprimir" ng-click="$eventos.verEventosProximos()">Regresar</button>
 
 

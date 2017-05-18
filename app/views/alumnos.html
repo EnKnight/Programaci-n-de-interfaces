@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="col-md-2 col-sm-2">
+    <div id="wrapper">
+      <!-- <input type="checkbox" id="menu" name="menu" class="menu-checkbox"> -->
+      <div class="menu">
+        <label class="go-back margen-arriba" for="menu" ng-click="$alumnos.verMenu()"><span>Toggle</span></label>
+      </div>
+    </div> <!-- #wrapper-->
+
+    <button type="button" class="boton-audio boton-audio-menu" onclick="Audio('disciplinas','Volume.svg','Volume-off.svg')">
+      <img id="sound_img" src="images/Volume-off.svg" alt=""> 
+    </button>
+
+    <p id="ayudae" class="texto-ayuda">Pulse la imagen deseada para ver los detalles de la disciplina</p>
+  </div>
+<!-- <div class="row container"> -->
+  <div class="col-md-5 col-sm-5">
+    <div class="discipline-image-card botones-sesion">
+      <img ng-click="$alumnos.login()" class="discipline-image" src="images/login.jpg">
+      <div>
+        <h2>Iniciar sesión</h2>
+        <p>Ingrese con su nombre de usuario y contraseña</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-5 col-sm-5">
+    <div class="discipline-image-card botones-sesion">
+      <img ng-click="$alumnos.registrarAlumno()" class="discipline-image" src="images/registrarse.png">
+      <div>
+        <h2>Registrarse</h2>
+        <p>Forme parte de la mejor escuela de danza </p>
+      </div>
+    </div>
+  </div>
+<!-- </div> -->
+</div>

@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="col-md-2">
+    <div id="wrapper">
+      <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
+      <div class="menu">
+        <label class="go-back margen-arriba" for="menu" ng-click="$alumnos.login()"><span>Toggle</span></label>
+      </div>
+    </div> <!-- #wrapper-->
+    <!-- <button type="button" class="boton-audio boton-audio-menu" onclick="Audio('disciplinas','Volume.svg','Volume-off.svg')">
+      <img id="sound_img" src="images/Volume-off.svg" alt=""> 
+    </button>
+    <p id="ayudae" class="texto-ayuda">Pulse la imagen deseada para visualizarla</p> -->
+  </div>
+
+  <div class="col-md-10">
+    <div class="container">
+      <table class="table tabla-info">
+        <thead>
+          <tr>
+            <th>Disciplina</th>     
+            <th>Días</th>       
+            <th>Horario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="c in clases">
+            <td>{{c.nombre}}</td>
+            <td>{{c.dias}}</td>
+            <td>{{c.horario}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
