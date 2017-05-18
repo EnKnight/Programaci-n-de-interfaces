@@ -37,8 +37,8 @@
 }
 
 .img-c:hover .img-w {
-  transform: scale(1.08);
-  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 450ms;
+  /*transform: scale(1.08);
+  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 450ms;*/
 }
 
 .img-c.active {

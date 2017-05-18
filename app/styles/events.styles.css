@@ -2,6 +2,18 @@
   max-height: 450px;
   overflow-y: scroll;
 }*/
+.texto-ayuda{
+  color: #ffffff;
+  text-align: justify;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 5px;
+  padding: 2px;
+}
+
+.texto-ayuda-salir{
+  display: none;
+}
 .boton-costado{
   margin-top: 40px;
 }

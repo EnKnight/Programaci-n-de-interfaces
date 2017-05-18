@@ -13,6 +13,11 @@
   /*margin-top: 100px;*/
   /*margin-left: 300px;*/
 }
+
+.botones-sesion{
+  top: 200px;
+}
+
 .accordion ul {
   width: 100%;
   display: table;
