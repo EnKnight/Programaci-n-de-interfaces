@@ -27,13 +27,13 @@
               <form accept-charset="UTF-8" role="form">
                 <fieldset>
                   <div class="form-group">
-                    <input id="nombre" class="form-control" placeholder="Nombre" name="email" type="text">
+                    <input id="nom" class="form-control" placeholder="Nombre" name="nom" type="text">
                   </div>
                   <div class="form-group">
-                    <input id="appat" class="form-control" placeholder="Apellido paterno" name="email" type="text">
+                    <input id="appat" class="form-control" placeholder="Apellido paterno" name="appat" type="text">
                   </div>
                   <div class="form-group">
-                    <input id="apmat" class="form-control" placeholder="Apellido paterno" name="email" type="text">
+                    <input id="apmat" class="form-control" placeholder="Apellido paterno" name="apmat" type="text">
                   </div>
                   <table class="table ">
                     <thead>
@@ -52,12 +52,10 @@
                     </tbody>
                   </table>
                   <div class="form-group">
-                    <textarea id="password" cols="1" class="form-control" maxlength="15" placeholder="Password" name="password" type="password" value=""></textarea>
+                    <input id="nomusr" class="form-control" placeholder="Nombre de usuario" name="email" type="text">
                   </div>
-                  <div class="checkbox">
-                    <label>
-                      <input name="remember" type="checkbox" value="Remember You"> Remember You
-                    </label>
+                  <div class="form-group">
+                    <textarea id="password" cols="1" class="form-control" maxlength="15" placeholder="Password" name="password" type="password" value=""></textarea>
                   </div>
                   <input class="btn btn-lg btn-success btn-block" type="submit" value="Login" ng-click="$alumnos.validarLogin()">
                 </fieldset>

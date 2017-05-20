@@ -11,27 +11,29 @@
       <img id="sound_img" src="images/Volume-off.svg" alt=""> 
     </button>
 
-    <p id="ayudae" class="texto-ayuda">Pulse la imagen deseada para ver los detalles de la disciplina</p>
+    <!-- <p id="ayudae" class="texto-ayuda">Pulse la imagen deseada para ver los detalles de la disciplina</p> -->
   </div>
 <!-- <div class="row container"> -->
   <div class="col-md-5 col-sm-5">
-    <div class="discipline-image-card botones-sesion">
+    <button class="btn-lg boton botones-sesion" ng-click="$alumnos.login()">Ingresar</button><br><br>
+    <!-- <div class="discipline-image-card botones-sesion">
       <img ng-click="$alumnos.login()" class="discipline-image" src="images/login.jpg">
       <div>
         <h2>Iniciar sesión</h2>
         <p>Ingrese con su nombre de usuario y contraseña</p>
       </div>
-    </div>
+    </div> -->
   </div>
 
   <div class="col-md-5 col-sm-5">
-    <div class="discipline-image-card botones-sesion">
+    <button class="btn-lg boton botones-sesion" ng-click="$alumnos.registrarAlumno()">Registrarse</button><br><br>
+    <!-- <div class="discipline-image-card botones-sesion">
       <img ng-click="$alumnos.registrarAlumno()" class="discipline-image" src="images/registrarse.png">
       <div>
         <h2>Registrarse</h2>
         <p>Forme parte de la mejor escuela de danza </p>
       </div>
-    </div>
+    </div> -->
   </div>
 <!-- </div> -->
 </div>

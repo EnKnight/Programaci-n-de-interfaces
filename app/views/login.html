@@ -1,7 +1,7 @@
 <!-- <script src="http://mymaplist.com/js/vendor/TweenLite.min.js"></script> -->
-<script type="text/javascript" src="scripts/tecladoEmergente.js"/>
-<script type="text/javascript" src="js/keyboard.js"></script>
-<!-- <link rel="stylesheet" type="text/css" href="styles/alumnos.css"> -->
+<!-- <script type="text/javascript" src="scripts/tecladoEmergente.js"/> -->
+<!-- <script type="text/javascript" src="scripts/keyboard.js"></script> -->
+<!-- <script type="text/javascript" src="scripts/consultarbd.js"></script> -->
 
 <div class="row">
   <div class="col-md-2">
@@ -23,20 +23,19 @@
               <h3 class="panel-title">Ingresar</h3>
             </div>
             <div class="panel-body">
-              <form accept-charset="UTF-8" role="form">
+              <form accept-charset="UTF-8" role="form" name="$alumnos.form">
                 <fieldset>
                   <div class="form-group">
-                    <input id="email" class="form-control" placeholder="E-mail" name="email" type="text">
+                    <!-- <teclado id="nomusr" name="nomusr" placeholder="Nombre de usuario"></teclado> -->
+
+                    <input id="email" class="form-control" placeholder="Nombre de usuario" name="email" type="text">
                   </div>
                   <div class="form-group">
-                    <textarea id="password" cols="1" class="form-control" maxlength="15" placeholder="Password" name="password" type="password" value=""></textarea>
+                  <input type="password" id="password" class="form-control" placeholder="Contraseña" name="password">
+                    <!-- <teclado id="contrasena" name="passwd" placeholder="Contraseña"></teclado> -->
+                    <!-- <textarea id="password" cols="1" class="form-control" maxlength="15" placeholder="Password" name="password" type="password" value=""></textarea> -->
                   </div>
-                  <div class="checkbox">
-                    <label>
-                      <input name="remember" type="checkbox" value="Remember You"> Remember You
-                    </label>
-                  </div>
-                  <input class="btn btn-lg btn-success btn-block" type="submit" value="Login" ng-click="$alumnos.validarLogin()">
+                  <input class="btn btn-lg btn-success btn-block" type="submit" value="Ingresar" ng-click="$alumnos.validarLogin()">
                 </fieldset>
               </form>
             </div>
@@ -46,7 +45,7 @@
     </div>
   </div>
 
-  <div id="container" style="display:none;">
+  <div id="kb-container" style="display:none;">
     <ul id="keyboard">
       <li class="symbol"><span class="off">`</span><span class="on">~</span></li>
       <li class="symbol"><span class="off">1</span><span class="on">!</span></li>
@@ -104,4 +103,5 @@
       <li class="space lastitem">&nbsp;</li>
     </ul>
   </div>
+  <script type="text/javascript" src="scripts/consultarbd.js"></script>
 </div>

@@ -1,39 +1,59 @@
-<div id="wrapper">
-  <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
-  <div class="menu">
-    <label class="go-back" for="menu" ng-click="$gallery.verGaleria()"><span>Toggle</span></label>
-  </div>
-</div> <!-- #wrapper-->
+<audio id="galeria" src="audio/galeria.wav">
+  <p>Tu navegador no implementa el elemento audio</p>
+</audio>
 
-<div class="mycontainer">
-	<div class="gallery2">
-	    <div class="img-w">
-	    	<img src="images/gallery/hip-hop/1.jpg" alt="" />
-	    </div>
-	    <div class="img-w">
-	    	<img src="images/gallery/hip-hop/2.jpg" alt="" />
-	    </div>
-	    <div class="img-w">
-	    	<img src="images/gallery/hip-hop/4.jpg" alt="" />
-	    </div>
-	    <div class="img-w">
-	    	<img src="images/gallery/hip-hop/5.jpg" alt="" />
-	    </div>
-	    <div class="img-w">
-	    	<img src="images/gallery/hip-hop/6.jpg" alt="" />
-	    </div>
-	    <div class="img-w">
-	    	<img src="images/gallery/hip-hop/7.jpg" alt="" />
-	    </div>
-	    <div class="img-w">
-	    	<img src="images/gallery/hip-hop/8.jpg" alt="" />
-	    </div>
-	    <div class="img-w">
-	    	<img src="images/gallery/hip-hop/9.jpg" alt="" />
-	    </div>
-	    <div class="img-w">
-	    	<img src="images/gallery/hip-hop/10.jpg" alt="" />
-	    </div>
-	    <script type="text/javascript" src="scripts/gallery.effects.js"></script>
+<div class="row">
+	<div class="col-md-2">
+		<div id="wrapper">
+		  <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
+		  <div class="menu">
+		    <label class="go-back margen-arriba" for="menu" ng-click="$gallery.verGaleria()"><span>Toggle</span></label>
+		  </div>
+		</div> <!-- #wrapper-->
+
+		<button type="button" class="boton-audio boton-audio-menu" onclick="Audio('galeria','Volume.svg','Volume-off.svg')">
+	      <img id="sound_img" src="images/Volume-off.svg" alt=""> 
+	    </button>
+	    <p id="ayudae" class="texto-ayuda">Pulse la imagen deseada para visualizarla</p>
+	    <p id="ayudas" class="texto-ayuda texto-ayuda-salir">Pulse sobre la imagen para regresar</p>
 	</div>
+
+	<div class="col-md-8">			
+		<div class="mycontainer">
+			<div class="gallery2">
+			    <div class="img-w">
+			    	<img src="images/gallery/hip-hop/2.jpg" alt="" />
+			    </div>
+			    <div class="img-w">
+			    	<img src="images/gallery/hip-hop/1.jpg" alt="" />
+			    </div>
+			    <div class="img-w">
+			    	<img src="images/gallery/hip-hop/4.jpg" alt="" />
+			    </div>
+			    <div class="img-w">
+			    	<img src="images/gallery/hip-hop/5.jpg" alt="" />
+			    </div>
+			    <div class="img-w">
+			    	<img src="images/gallery/hip-hop/6.jpg" alt="" />
+			    </div>
+			    <div class="img-w">
+			    	<img src="images/gallery/hip-hop/7.jpg" alt="" />
+			    </div>
+			    <div class="img-w">
+			    	<img src="images/gallery/hip-hop/8.jpg" alt="" />
+			    </div>
+			    <div class="img-w">
+			    	<img src="images/gallery/hip-hop/9.jpg" alt="" />
+			    </div>
+			    <div class="img-w">
+			    	<img src="images/gallery/hip-hop/10.jpg" alt="" />
+			    </div>
+  <!-- <script type="text/javascript" src="scripts/events.effects.js"></script> -->
+			    
+			    <script type="text/javascript" src="scripts/gallery.effects.js"></script>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-2"></div>
 </div>
