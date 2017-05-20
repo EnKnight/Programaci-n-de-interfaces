@@ -69,7 +69,7 @@ $(function(){
 
 $(document).ready(function(){
 		$("#password").click(function(){
-			$('#container').show("swing");
+			$('#kb-container').show("swing");
 		 });
 		//$('#password').replaceWith('<input type="password">');
 	});

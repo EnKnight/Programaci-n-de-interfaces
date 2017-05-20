@@ -51,6 +51,36 @@ angular
         controller: 'AlumnosCtrl',
         controllerAs: '$alumnos'
       })
+      .when('/maestros', {
+        templateUrl: 'views/maestros.html',
+        controller: 'MaestrosCtrl',
+        controllerAs: '$maestros'
+      })
+      .when('/maestrosAereo', {
+        templateUrl: 'views/maestrosaereo.html',
+        controller: 'MaestrosCtrl',
+        controllerAs: '$maestros'
+      })
+      .when('/maestrosBallet', {
+        templateUrl: 'views/maestrosballet.html',
+        controller: 'MaestrosCtrl',
+        controllerAs: '$maestros'
+      })
+      .when('/maestrosContemporaneo', {
+        templateUrl: 'views/maestroscontemporaneo.html',
+        controller: 'MaestrosCtrl',
+        controllerAs: '$maestros'
+      })
+      .when('/maestrosHiphop', {
+        templateUrl: 'views/maestroshiphop.html',
+        controller: 'MaestrosCtrl',
+        controllerAs: '$maestros'
+      })
+      .when('/maestrosJazz', {
+        templateUrl: 'views/maestrosjazz.html',
+        controller: 'MaestrosCtrl',
+        controllerAs: '$maestros'
+      })
       .when('/disciplinas', {
         templateUrl: 'views/disciplinas.html',
         controller: 'DisciplinasCtrl',

@@ -20,7 +20,7 @@ angular.module('proyectoFinalApp')
     };
 
     $ctrl.verMaestros = function(){
-
+        $location.path("/maestros");
     };
 
     $ctrl.verAlumnos = function(){

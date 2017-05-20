@@ -23,13 +23,17 @@ $(function() {
     setTimeout(function() {
       copy.addClass("positioned")
     }, 0)
+    document.getElementById('ayudae').style.display = "none";
+    document.getElementById('ayudas').style.display = "block";
   })  
 })
+
 $(document).on("click", ".img-c.active", function() {
   let copy = $(this)
   copy.removeClass("positioned active").addClass("postactive")
   setTimeout(function() {
     copy.remove();
   }, 500)
-
+  document.getElementById('ayudae').style.display = "block";
+  document.getElementById('ayudas').style.display = "none";
 })
