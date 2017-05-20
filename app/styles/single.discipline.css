@@ -128,7 +128,20 @@
   width: 2rem;
   height: 3rem;
   cursor: pointer;
+  /*margin: 10px;*/
 }
+.nav-wrapper .nav-up {
+  bottom: 80px;
+}
+.nav-wrapper .nav-down {
+  top: 80px;
+}
+
+.flecha-arriba{
+  bottom: 20px;
+}
+
+
 .nav-wrapper .nav-up svg, .nav-wrapper .nav-down svg {
   fill: #666666;
   width: 100%;
@@ -137,10 +150,21 @@
 .nav-wrapper .nav-up svg:hover, .nav-wrapper .nav-down svg:hover {
   fill: black;
 }
-/*.nav-wrapper .nav-up {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}*/
+#arrow-up {
+  width: 60px;
+  height: 60px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+          bottom: 10px;
+}
+
+#arrow-down{
+  width: 60px;
+  height: 60px;
+  top: 10px;
+-webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
 .nav-wrapper .nav-line {
   width: 100%;
   height: 0.1rem;

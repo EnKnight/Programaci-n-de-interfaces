@@ -4,11 +4,14 @@
 }*/
 .texto-ayuda{
   color: #ffffff;
-  text-align: justify;
+  /*text-align: justify;*/
   font-size: 20px;
   margin-top: 10px;
   margin-left: 5px;
+  font-family: 'Bodoni MT Black';
   padding: 2px;
+  font-weight: bold;
+  padding-left: 30px;
 }
 
 .texto-ayuda-salir{

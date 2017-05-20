@@ -1,7 +1,7 @@
 #contenedor_Login{
-    background: url(http://mymaplist.com/img/parallax/pinlayer1.png) no-repeat center center fixed;
-	background-color: #444;
-    background: url(http://mymaplist.com/img/parallax/pinlayer2.png) no-repeat center center fixed,url(http://mymaplist.com/img/parallax/pinlayer1.png) no-repeat center center fixed,url(http://www.istartedsomething.com/bingimages/cache/AKHumpbacks_EN-AU1914968143.jpg) no-repeat center center fixed;    
+    /*background: url(http://mymaplist.com/img/parallax/pinlayer1.png) no-repeat center center fixed;*/
+	/*background-color: #444;*/
+    /*background: url(http://mymaplist.com/img/parallax/pinlayer2.png) no-repeat center center fixed,url(http://mymaplist.com/img/parallax/pinlayer1.png) no-repeat center center fixed,url(http://www.istartedsomething.com/bingimages/cache/AKHumpbacks_EN-AU1914968143.jpg) no-repeat center center fixed;    */
       -webkit-background-size: auto auto;
       -moz-background-size: auto auto;
       -o-background-size: auto auto;
@@ -43,7 +43,7 @@ background: #eee;
 #write {
 	margin: 0 0 5px;
 	padding: 5px;
-	width: 671px;
+	width: 700px;
 	height: 200px;
 	font: 1em/1.5 Verdana, Sans-Serif;
 	background: #fff;
@@ -53,6 +53,7 @@ background: #eee;
 }
 
 #keyboard {
+	margin-bottom: 100px;  
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -61,9 +62,9 @@ background: #eee;
 #keyboard li {
 	float: left;
 	margin: 0 5px 5px 0;
-	width: 40px;
-	height: 40px;
-	line-height: 40px;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
 	text-align: center;
 	background: #fff;
 	border: 1px solid #f9f9f9;

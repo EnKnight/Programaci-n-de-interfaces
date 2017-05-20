@@ -17,7 +17,12 @@ label {
 label:focus {
   outline: none;
 }
+.go-back-arrow{
+  width: 100px;
+  height: 100px;
 
+  background: #fff url(../images/go-back-arrow.png);
+}
 .menu {
   position: absolute;
   top: 0;
@@ -57,7 +62,7 @@ label:focus {
   display: block;
   padding: 0;
   text-indent: -9999px;
-  background: #fff url(../images/go-back.png) 50% 50%/25px 25px no-repeat;
+  background: url(../images/go-back-arrow.png)  no-repeat;
 }
 .menu ul li > label {
   background: url(../images/icon-arrow-right-b-128.png) 95% 50%/16px 16px no-repeat;

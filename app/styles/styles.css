@@ -30,7 +30,7 @@ and open the template in the editor.
   /*margin: 10px;
   width: 150px;
   padding: 5px;*/
-    background: #e4eef5;
+    /*background: #e4eef5;
   background-image: -webkit-linear-gradient(top, #e4eef5, #c4c4c4);
   background-image: -moz-linear-gradient(top, #e4eef5, #c4c4c4);
   background-image: -ms-linear-gradient(top, #e4eef5, #c4c4c4);
@@ -49,14 +49,12 @@ and open the template in the editor.
   padding: 10px 20px 10px 20px;
   margin: 10px 10px 10px 10px;
   text-decoration: none;
-  width: 150px;
+  width: 150px;*/
 }
 }
 
-.boton{
-	/*margin: 10px;
-	width: 150px;
-	padding: 5px;*/
+/*.boton{
+
     background: #e4eef5;
   background-image: -webkit-linear-gradient(top, #e4eef5, #c4c4c4);
   background-image: -moz-linear-gradient(top, #e4eef5, #c4c4c4);
@@ -77,7 +75,38 @@ and open the template in the editor.
   margin: 10px 10px 10px 10px;
   text-decoration: none;
   width: 180px;
+}*/
+.boton {
+   background: #a0aab0;
+  background-image: -webkit-linear-gradient(top, #a0aab0, #808487);
+  background-image: -moz-linear-gradient(top, #a0aab0, #808487);
+  background-image: -ms-linear-gradient(top, #a0aab0, #808487);
+  background-image: -o-linear-gradient(top, #a0aab0, #808487);
+  background-image: linear-gradient(to bottom, #a0aab0, #808487);
+  -webkit-border-radius: 11;
+  -moz-border-radius: 11;
+  border-radius: 11px;
+  text-shadow: 4px 0px 0px #6b686b;
+  -webkit-box-shadow: 0px 0px 9px #000000;
+  -moz-box-shadow: 0px 0px 9px #000000;
+  box-shadow: 0px 0px 9px #000000;
+  font-family: Arial;
+  color: #fcf9fc;
+  font-size: 38px;
+  padding: 7px 20px 10px 20px;
+  text-decoration: none;
+  width: 220px;
+  margin-top: 25px;
 }
+/*.button:hover {
+   border-top-color: #90979c;
+   background: #90979c;
+   color: #d4c3d4;
+   }
+.button:active {
+   border-top-color: #b3b7ba;
+   background: #b3b7ba;
+   }*/
 
 .boton-audio-menu{
   margin-top: 150px;
@@ -95,6 +124,7 @@ and open the template in the editor.
 .boton-audio{
   width: 80px;
   height: 80px;
+  border-radius: 20px;
 }
 
 .info{
