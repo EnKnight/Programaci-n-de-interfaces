@@ -69,12 +69,12 @@
 }
 .header-wrapper .logo {
   display: block;
-  font-size: 2rem;
+  font-size: 5rem;
   font-weight: bold;
   margin-top: 3rem;
   line-height: 1;
   font-weight: 600;
-  color: #939393;
+  color: #cacaca;
   text-align: center;
 }
 .header-wrapper .logo span {
@@ -119,6 +119,7 @@
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  margin-left: -100px;
 }
 .nav-wrapper .nav-up {
   opacity: 0;
@@ -127,7 +128,20 @@
   width: 2rem;
   height: 3rem;
   cursor: pointer;
+  /*margin: 10px;*/
 }
+.nav-wrapper .nav-up {
+  bottom: 80px;
+}
+.nav-wrapper .nav-down {
+  top: 80px;
+}
+
+.flecha-arriba{
+  bottom: 20px;
+}
+
+
 .nav-wrapper .nav-up svg, .nav-wrapper .nav-down svg {
   fill: #666666;
   width: 100%;
@@ -136,9 +150,20 @@
 .nav-wrapper .nav-up svg:hover, .nav-wrapper .nav-down svg:hover {
   fill: black;
 }
-.nav-wrapper .nav-up {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+#arrow-up {
+  width: 60px;
+  height: 60px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+          bottom: 10px;
+}
+
+#arrow-down{
+  width: 60px;
+  height: 60px;
+  top: 10px;
+-webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
 }
 .nav-wrapper .nav-line {
   width: 100%;
@@ -291,14 +316,14 @@
   color: #AEACAB;
   font-weight: bold;
   letter-spacing: 0.3rem;
-  font-size: 1.2rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
   text-align: justify;
 }
 .slider-container .slide-content .txt-wrapper p.excerpt {
   margin: 0;
   color: #AEACAB;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   line-height: 1.5;
   text-align: justify;
 }

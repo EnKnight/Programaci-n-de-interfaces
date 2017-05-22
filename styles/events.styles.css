@@ -2,16 +2,47 @@
   max-height: 450px;
   overflow-y: scroll;
 }*/
+.texto-ayuda{
+  color: #ffffff;
+  /*text-align: justify;*/
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 5px;
+  font-family: 'Bodoni MT Black';
+  padding: 2px;
+  font-weight: bold;
+  padding-left: 30px;
+}
+
+.texto-ayuda-salir{
+  display: none;
+}
+.boton-costado{
+  margin-top: 40px;
+}
+
+.boton-costado-imprimir{
+  display: none;
+  margin-top: 260px;
+}
+
+.events-container{
+  margin-top: 20px;
+  height: 720px;
+}
 
 .h3-marks {
-        margin: 25px 0;
-        color: #D6D6D6;
-      }
+  margin: 25px 0;
+  color: #D6D6D6;
+}
 
 .text-xs-center {
   text-align: center !important; 
 }
 
+.botones-eventos{
+  margin: 0 auto;
+}
 .text-muted {
   color: #818a91; 
 }      
