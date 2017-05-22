@@ -1,103 +1,60 @@
-<audio id="eventos_audio" src="audio/eventos.wav">
+<audio id="eventos" src="audio/eventos.wav">
   <p>Tu navegador no implementa el elemento audio</p>
 </audio>
 
-<div id="wrapper">
-  <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
-  <div class="menu">
-    <label class="menu-toggle" for="menu"><span>Toggle</span></label>
-    <ul>
-      <li>
-        <a href="#">Menu</a>
-      </li>
-      <li>
-      	<a ng-click="">Próximos</a>
-      </li>
-      <li>
-        <a ng-click="$eventos.imprimir()">Imprimir</a>
-      </li>
-    </ul>
-  </div>
-</div> <!-- #wrapper-->
+<div class="row">
+  <div class="col-md-2 col-sm-2">
+    <div id="wrapper">
+      <!-- <input type="checkbox" id="menu" name="menu" class="menu-checkbox"> -->
+      <div class="menu">
+        <label class="go-back margen-arriba" for="menu" ng-click="$eventos.verMenu()"><span>Toggle</span></label>
+      </div>
+    </div> <!-- #wrapper-->
 
-<div class="container mycontainer">
-  <div class="row">
-    <div class="col-md-4">
-      <h3 id="h3-cards" class="h3-marks">Todos los eventos</h3>
-    </div>
-    <div class="col-md-1 col-md-offset-6">
-        <br><br>
-        <button type="button" class="btn btn-default btn-xs" onclick="Audio('eventos_audio','Volume_White.svg','Volume-off_White.svg')">
-        <img id="sound_img" src="images/Volume_White.svg" alt=""> 
-    </div>
+    <button type="button" class="boton-audio boton-audio-menu" onclick="Audio('eventos','Volume.svg','Volume-off.svg')">
+      <img id="sound_img" src="images/Volume-off.svg" alt=""> 
+    </button>
+    <button class="boton boton-costado" ng-click="$eventos.verEventosPasados()">Pasados</button>
+    <p id="ayudae" class="texto-ayuda">Pulse la imagen deseada para visualizarla</p>
+    <p id="ayudas" class="texto-ayuda texto-ayuda-salir">Pulse sobre la imagen para regresar</p>
+
   </div>
 
-    <div class="card-columns one-ui-kit-example-container">
-        <!-- <div class="card text-xs-center">
-          <div class="card-header">
-            Featured
-          </div>
-          <div class="card-block">
-            <h4 class="card-title">Special title treatment</h4>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-          <div class="card-footer text-muted">
-            2 days ago
-          </div>
-        </div> -->
-        
-        <div class="card card-inverse">
-          <img class="card-img" style="width:100%;" src="images/events/pasados/evento4.jpg" alt="Card image">
-          <div class="card-img-overlay">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            <br>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-
-        <div class="card text-xs-center">
-          <div class="card-block">
-            <blockquote class="card-blockquote">
-              <cite title="Source Title">"Una gran escuela con un excelente método"</cite>
-              
-              <footer>Rico Hernández, Festival de fin de cursos 2016</footer>
-            </blockquote>
-            <div class="card-block">
-              <!-- <button class="btn btn-danger-rounded-outline">Check out this btn</button> -->
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <img class="card-img-top" style="width:100%;" src="images/events/pasados/evento11.jpg" alt="Card image cap">
-          <div class="card-block">
-            <h4 class="card-title">Festival de fin de cursos 2016</h4>
-            <p class="card-text">Ve las principales fotos de nuestro festival de fin de cursos 2016.</p>
-            <a href="#" class="btn btn-info btn-block">Galería</a>
-          </div>
-        </div>
-
-        <div class="card card-inverse" ng-click="$eventos.verGaleriaEventos()">
-          <img class="card-img" style="width:100%;" src="images/events/pasados/evento7.jpg" alt="Card image">
-          <div class="card-img-overlay">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            <button>Boton</button> -->
-            <!-- <a href="#" class="btn btn-info btn-block">Galería</a> -->
-          </div>
-        </div>
-
-        <div class="card card-inverse">
-          <img class="card-img" style="width:100%;" src="images/events/pasados/evento3.jpg" alt="Card image">
-          <div class="card-img-overlay">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-          </div>
-        </div>
-    </div><!-- /card-columns -->
-  </div> <!-- /container for CARDS -->
+  <div class="col-md-8 col-sm-8 events-container">
+    <h3 id="h3-cards" class="h3-marks">Eventos próximos</h3>
+    <div class="gallery2">
+      <div class="img-w">
+        <img src="images/events/proximos/evento4.jpg" alt="" />
+      </div>
+      <div class="img-w">
+        <img src="images/events/proximos/evento2.jpg" alt="" />
+      </div>
+      <div class="img-w">
+        <img src="images/events/proximos/evento3.jpg" alt="" />
+      </div>
+      <div class="img-w">
+        <img src="images/events/proximos/evento10.jpg" alt="" />
+      </div>
+      <div class="img-w">
+        <img src="images/events/proximos/evento5.jpg" alt="" />
+      </div>
+      <div class="img-w">
+        <img src="images/events/proximos/evento6.jpg" alt="" />
+      </div>
+      <div class="img-w">
+        <img src="images/events/proximos/evento7.jpg" alt="" />
+      </div>
+      <div class="img-w">
+        <img src="images/events/proximos/evento8.jpg" alt="" />
+      </div>
+      <div class="img-w">
+        <img src="images/events/proximos/evento9.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-2 col-sm-2">
+    <button id="imprimir" class="boton boton-costado-imprimir" ng-click="$eventos.imprimir()">Imprimir</button>
+  </div>
+  <script type="text/javascript" src="scripts/events.effects.js"></script>
+</div>

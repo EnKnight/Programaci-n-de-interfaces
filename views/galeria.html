@@ -1,16 +1,25 @@
-<div id="wrapper" >
-  <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
-  <div class="menu">
-    <label class="menu-toggle" for="menu"><span>Toggle</span></label>
-    <ul>
-      <li>
-        <a href="#">Menu</a>
-      </li>
-    </ul>
+<audio id="galeria" src="audio/disciplinas.wav">
+  <p>Tu navegador no implementa el elemento audio</p>
+</audio>
+
+<div class="row">
+  <div class="col-md-2">
+    <!-- <div class="go-back-arrow"></div> -->
+     <div id="wrapper">
+      <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
+      <div class="menu">
+        <label class="go-back margen-arriba" for="menu" ng-click="$gallery.verMenu()"><span>Toggle</span></label>
+      </div>
+    </div>  --><!-- #wrapper -->
+    <!-- <button type="button" class="boton-audio boton-audio-menu" onclick="Audio('galeria','Volume.svg','Volume-off.svg')">
+      <img id="sound_img" src="images/Volume-off.svg" alt=""> 
+    </button> -->
+    <br><br><br><br><br><br><br><br>
+    <!-- <img src="images/ayuda/1.png"> -->
+    <p id="ayudae" class="texto-ayuda">Pulse la imagen deseada para ingresar</p>
   </div>
-</div> <!-- #wrapper-->
-<span id="span1"><span id="span2"></span></span>
-<!-- <div class="container"> -->
+
+  <div class="col-md-10">
     <div class="wrap">
       <a class="gallery" ng-click="$gallery.verJazz()"><div></div></a>
       <a class="gallery" ng-click="$gallery.verBallet()"><div></div></a>
@@ -18,4 +27,5 @@
       <a class="gallery" ng-click="$gallery.verAereo()"><div></div></a>
       <a class="gallery" ng-click="$gallery.verContemporaneo()"><div></div></a>
     </div>
-<!-- </div> -->
+  </div>
+</div>

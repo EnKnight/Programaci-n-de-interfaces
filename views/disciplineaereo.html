@@ -3,14 +3,14 @@
 <div id="wrapper">
   <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
   <div class="menu">
-    <label class="go-back" for="menu" ng-click="$dis.verDisciplinas()"><span>Toggle</span></label>
+    <label class="go-back margen-arriba-disciplinas" for="menu" ng-click="$dis.verDisciplinas()"><span>Toggle</span></label>
   </div>
 </div> <!-- #wrapper-->
 
 <svg id="icons" xmlns="http://www.w3.org/2000/svg">  
   <symbol id="icon-arrow" viewBox="0 0 476.213 476.213" >
   <polygon fill="inherit" points="347.5,324.393 253.353,418.541 253.353,0 223.353,0 223.353,419.033 128.713,324.393 107.5,345.607 
- 	238.107,476.213 368.713,345.606 "/>
+  238.107,476.213 368.713,345.606 "/>
   </symbol>
 </svg>
 
@@ -32,21 +32,34 @@
     </div>
   </div>
   
-  <div class="nav-wrapper">
-    <div class="nav-arrows">
-      <div class="nav-up">
-           <svg id="arrow-up">
-            <use xlink:href="#icon-arrow"></use>
-          </svg>
-       </div>
-      <div class="nav-line"></div>
-      <div class="nav-down">
-         <svg id="arrow-down">
-            <use xlink:href="#icon-arrow"></use>
-          </svg>
+  <div class="number-wrapper">
+      <div class="number-count">
+        <div class="number">01</div>
       </div>
     </div>
-  </div>
+    
+    <div class="nav-wrapper">
+      <div class="nav-arrows">
+        <div class="nav-up">
+          <!-- <button src="images/go-back2.png" id="arrow-up"></button> -->
+        <image src="images/go-back2.png" class="flecha-arriba" id="arrow-up"></image>
+
+             <!-- <svg id="arrow-up">
+              <use xlink:href="#icon-arrow"></use>
+            </svg> -->
+         </div>
+        <div class="nav-line"></div>
+        <br><br><br><br>
+        <div class="nav-down">
+        <!-- <button class ="btn" id="arrow-up">Siguiente</button> -->
+        <!-- <button src="images/go-back2.png" id="arrow-up"></button> -->
+        <image src="images/go-back2.png" id="arrow-down"></image>
+           <!-- <svg id="arrow-down">
+              <use xlink:href="#icon-arrow"></use>
+            </svg> -->
+        </div>
+      </div>
+    </div> 
   
   <div class="slider-wrapper">
     <div class="slider-container">                       
@@ -55,7 +68,7 @@
             <div class="txt-wrapper">
               <h2><span>Danza Aérea</span></h2>
               <span class="subtitle">Nuestros brazos comienzan en la espalda porque una vez fueron alas</span>
-              <p class="excerpt"><span>"Martha Graham."</span><br><br>La Danza Aérea (Acrobacia en tela o Gimnasia aérea) es resultado de un proceso de transformación de distintas disciplinas artísticas y deportivas que combinan la danza contemporánea con las artes circenses, las acrobacias, el ballet y el teatro.</p>
+              <p class="excerpt"><span>"Martha Graham."</span><br>La Danza Aérea (Acrobacia en tela o Gimnasia aérea) es resultado de un proceso de transformación de distintas disciplinas artísticas y deportivas que combinan la danza contemporánea con las artes circenses, las acrobacias, el ballet y el teatro.</p>
             </div>
           </div>
           <div class="slide-content img">
@@ -77,5 +90,4 @@
     </div>
   </div>
 </div>
-
 </div>

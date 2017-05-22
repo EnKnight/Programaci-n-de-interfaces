@@ -1,56 +1,68 @@
-<div id="wrapper">
-  <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
-  <div class="menu">
-    <label class="menu-toggle" for="menu"><span>Toggle</span></label>
-    <ul>
-      <li>
-        <a href="#">Menu</a>
-      </li>
-    </ul>
-  </div>
-</div> <!-- #wrapper-->
+<audio id="disciplinas" src="audio/disciplinas.wav">
+  <p>Tu navegador no implementa el elemento audio</p>
+</audio>
 
-<div class="accordion">
-  <ul>
-    <li>
-      <div>
-        <a ng-click="$dis.verAereo()">
-          <h2>Danza aérea</h2>
-          <p>Leer una breve descripción e información de la disciplina</p>
-        </a>
+<div class="row">
+  <div class="col-md-2 col-sm-2">
+    <div id="wrapper">
+      <!-- <input type="checkbox" id="menu" name="menu" class="menu-checkbox"> -->
+      <div class="menu">
+        <label class="go-back margen-arriba" for="menu" ng-click="$dis.verMenu()"><span>Toggle</span></label>
       </div>
-    </li>
-    <li>
+    </div> <!-- #wrapper-->
+
+    <button type="button" class="boton-audio boton-audio-menu" onclick="Audio('disciplinas','Volume.svg','Volume-off.svg')">
+      <img id="sound_img" src="images/Volume-off.svg" alt=""> 
+    </button>
+
+    <p id="ayudae" class="texto-ayuda">Pulse la imagen deseada para ver los detalles de la disciplina</p>
+  </div>
+<!-- <div class="row container"> -->
+  <div class="col-md-5 col-sm-5">
+    <div class="discipline-image-card">
+      <img ng-click="$dis.verAereo()" class="discipline-image" src="images/disciplines/aereo.jpg">
       <div>
-        <a ng-click="$dis.verBallet()">
-          <h2>Ballet</h2>
-          <p>Leer una breve descripción e información de la disciplina</p>
-        </a>
+        <h2>Danza Aérea</h2>
+        <p>Pulsar para leer la información de la disciplina</p>
       </div>
-    </li>
-    <li>
+    </div>
+    <div class="discipline-image-card">
+      <img ng-click="$dis.verBallet()" class="discipline-image" src="images/disciplines/ballet.jpg">
       <div>
-        <a ng-click="$dis.verContemporaneo()">
-          <h2>Danza Contemporánea</h2>
-          <p>Leer una breve descripción e información de la disciplina</p>
-        </a>
+        <h2>Ballet</h2>
+        <p>Pulsar para leer la información de la disciplina</p>
       </div>
-    </li>
-    <li>
+    </div>
+  </div>
+
+  <div class="col-md-5 col-sm-5">
+    <div class="discipline-image-card">
+      <img ng-click="$dis.verHipHop()" class="discipline-image" src="images/disciplines/hip-hop.jpg">
       <div>
-        <a ng-click="$dis.verHipHop()">
-          <h2>Hip hop</h2>
-          <p>Leer una breve descripción e información de la disciplina</p>
-        </a>
+        <h2>Hip hop</h2>
+        <p>Pulsar para leer la información de la disciplina</p>
       </div>
-    </li>
-    <li>
+    </div>
+    <div class="discipline-image-card">
+      <img ng-click="$dis.verJazz()" class="discipline-image" src="images/disciplines/jazz.jpg">
       <div>
-        <a ng-click="$dis.verJazz()">
-          <h2>Jazz</h2>
-          <p>Leer una breve descripción e información de la disciplina</p>
-        </a>
+        <h2>Jazz</h2>
+        <p>Pulsar para leer la información de la disciplina</p>
       </div>
-    </li>
-  </ul>
+    </div>
+  </div>
+<!-- </div> -->
+</div>
+
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-8">
+    <div class="discipline-image-card single-discipline">
+      <img ng-click="$dis.verContemporaneo()" class="discipline-image" src="images/disciplines/contemporaneo.jpg">
+      <div>
+        <h2>Contemporáneo</h2>
+        <p>Pulsar para leer la información de la disciplina</p>
+      </div>
+    </div>
+  </div>
 </div>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="/app/styles/Signup.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>Signup Form (DailyUI #001)</title>
+    
+     
+
+  
+</head>
+
+<body>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+
+<main>
+  <figure>
+    <picture>
+
+      <img       src="/images/logo.jpg"
+                 alt="DCA Academia de Baile" />
+    </picture>
+  </figure>
+  <div class="headline">
+    <h2 class="text-headline">DCA</h2>
+    <h3 class="text-subheadline">Academia de Baile</h2>
+  </div>
+  <form class="form-login">
+    <span>
+      <!--style="display: none;"-->
+      <label for="username" id="lbl_username" class="text-small-uppercase">Username</label>
+      <input class="text-body" id="username" name="usuario" type="text">
+    </span>
+    <span>
+      <label for="pasword" id="lbl_pasword" class="text-small-uppercase">Password</label>
+      <input class="text-body" id="pasword" name="pass" type="password" required>
+    </span>
+    <span>
+      <label for="email" id="lbl_email" class="text-small-uppercase">Email</label>
+      <input class="text-body" id="email" name="correo" type="email"required>
+    </span>
+    <span>
+      <label for="name" id="lbl_name" class="text-small-uppercase">Nombre</label>
+      <input class="text-body" id="name" name="nombre" type="text" required>
+    </span>
+    <span>
+      <label for="f_last_name" id="lbl_f_last_name" class="text-small-uppercase">Apellido Paterno</label>
+      <input class="text-body" id="f_last_name" name="f_last_name" type="text" required>
+    </span>
+    <span>
+      <label for="s_last_name" id="lbl_s_last_name"class="text-small-uppercase">Apellido Materno</label>
+      <input class="text-body" id="s_last_name" name="s_last_name" type="text" required>
+    </span>
+    <span>
+      <label for="disciplina" class="text-small-uppercase dropdowns">Disciplina</label>
+      <!--<input class="text-body dropdowns" id="disciplina" name="disciplina" type="text" required>-->
+      <div class="styled-select blue semi-square dropdowns">
+        <select name="disciplina">
+          <option>Ballet</option>
+          <option>Hip-Hop</option>
+          <option>Danza aerea</option>
+          <option>Salsa</option>
+          <option>Belly Dance</option>
+        </select>
+      </div>
+    </span>
+
+    <span>
+      <label for="horarios" class="text-small-uppercase dropdowns">Horarios</label>
+      <!--<input class="text-body dropdowns" id="disciplina" name="disciplina" type="text" required>-->
+      <div class="styled-select blue semi-square dropdowns">
+        <select name="Horarios">
+          <option>Ballet</option>
+        </select>
+      </div>
+    </span>
+
+
+    <a class="muestra-dropdowns">Siguiente</a>
+    <!-- <a href="http://localhost/Interfaces_2/Signup/conection.php"> -->
+      <input class="text-small-uppercase" id="submit" type="submit" value="Inciar a Danzar">
+      <!--da click-->
+   <!-- </a>-->
+  </form>
+</main>
+    <script src="/scripts/sing_up.js"></script>
+
+</body>
+</html>
