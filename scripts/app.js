@@ -33,8 +33,53 @@ angular
       })
       .when('/alumnos', {
         templateUrl: 'views/alumnos.html',
-        controller: 'MainmenuCtrl',
-        controllerAs: 'alumnos'
+        controller: 'AlumnosCtrl',
+        controllerAs: '$alumnos'
+      })
+      .when('/registrarAlumno', {
+        templateUrl: 'views/registraralumnos.html',
+        controller: 'AlumnosCtrl',
+        controllerAs: '$alumnos'
+      })
+      .when('/login', {
+        templateUrl: 'views/login.html',
+        controller: 'AlumnosCtrl',
+        controllerAs: '$alumnos'
+      })
+      .when('/verClases', {
+        templateUrl: 'views/verclases.html',
+        controller: 'AlumnosCtrl',
+        controllerAs: '$alumnos'
+      })
+      .when('/maestros', {
+        templateUrl: 'views/maestros.html',
+        controller: 'MaestrosCtrl',
+        controllerAs: '$maestros'
+      })
+      .when('/maestrosAereo', {
+        templateUrl: 'views/maestrosaereo.html',
+        controller: 'MaestrosCtrl',
+        controllerAs: '$maestros'
+      })
+      .when('/maestrosBallet', {
+        templateUrl: 'views/maestrosballet.html',
+        controller: 'MaestrosCtrl',
+        controllerAs: '$maestros'
+      })
+      .when('/maestrosContemporaneo', {
+        templateUrl: 'views/maestroscontemporaneo.html',
+        controller: 'MaestrosCtrl',
+        controllerAs: '$maestros'
+      })
+      .when('/maestrosHiphop', {
+        templateUrl: 'views/maestroshiphop.html',
+        controller: 'MaestrosCtrl',
+        controllerAs: '$maestros'
+      })
+      .when('/maestrosJazz', {
+        templateUrl: 'views/maestrosjazz.html',
+        controller: 'MaestrosCtrl',
+        controllerAs: '$maestros'
       })
       .when('/disciplinas', {
         templateUrl: 'views/disciplinas.html',
@@ -71,6 +116,11 @@ angular
         controller: 'EventosCtrl',
         controllerAs: '$eventos'
       })
+      .when('/eventosPasados',{
+        templateUrl: 'views/eventospasados.html',
+        controller: 'EventosCtrl',
+        controllerAs: '$eventos'
+      })
       .when('/printEvents',{
         templateUrl: 'views/printevents.html',
         controller: 'EventosCtrl',
@@ -78,8 +128,8 @@ angular
       })
       .when('/historia', {
         templateUrl: 'views/historia.html',
-        controller: 'MainmenuCtrl',
-        controllerAs: '$menu'
+        controller: 'HistoriaCtrl',
+        controllerAs: '$historia'
       })
       .when('/galeria', {
         templateUrl: 'views/galeria.html',
