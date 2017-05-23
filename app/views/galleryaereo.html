@@ -1,81 +1,59 @@
-<div id="wrapper">
-  <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
-  <div class="menu">
-    <label class="menu-toggle" for="menu"><span>Toggle</span></label>
-    <ul>
-      <li>
-        <a href="#">Menu</a>
-      </li>
-      <li>
-      	<a ng-click="$gallery.verGaleria()">Galería</a>
-      </li>
-    </ul>
-  </div>
-</div> <!-- #wrapper-->
+<audio id="galeria" src="audio/galeria.wav">
+  <p>Tu navegador no implementa el elemento audio</p>
+</audio>
 
-<div class="mycontainer">
-	<div class="gallery2">
-	    <div class="img-w">
-	    	<img src="images/gallery/aereo/2.jpg" alt="" />
-	    </div>
-	    <div class="img-w">
-	    	<img src="images/gallery/aereo/3.jpg" alt="" />
-	    </div>
-	    <div class="img-w">
-	    	<img src="images/gallery/aereo/4.jpg" alt="" />
-	    </div>
-	    <div class="img-w">
-	    	<img src="images/gallery/aereo/5.jpg" alt="" />
-	    </div>
-	    <div class="img-w">
-	    	<img src="images/gallery/aereo/6.jpg" alt="" />
-	    </div>
-	    <div class="img-w">
-	    	<img src="images/gallery/aereo/7.jpg" alt="" />
-	    </div>
-	    <div class="img-w">
-	    	<img src="images/gallery/aereo/8.jpg" alt="" />
-	    </div>
-	    <div class="img-w">
-	    	<img src="images/gallery/aereo/9.jpg" alt="" />
-	    </div>
-	    <div class="img-w">
-	    	<img src="images/gallery/aereo/10.jpg" alt="" />
-	    </div>
-	    <script type="text/javascript">
-	    	$(function() {
-			  $(".img-w").each(function() {
-			    $(this).wrap("<div class='img-c'></div>")
-			    let imgSrc = $(this).find("img").attr("src");
-			     $(this).css('background-image', 'url(' + imgSrc + ')');
-			  })            
-			  
-			  $(".img-c").click(function() {
-			    let w = $(this).outerWidth()
-			    let h = $(this).outerHeight()
-			    let x = $(this).offset().left
-			    let y = $(this).offset().top
-			    
-			    
-			    $(".active").not($(this)).remove()
-			    let copy = $(this).clone();
-			    copy.insertAfter($(this)).height(h).width(w).delay(500).addClass("active")
-			    $(".active").css('top', y - 8);
-			    $(".active").css('left', x - 8);
-			    
-			    setTimeout(function() {
-			      copy.addClass("positioned")
-			    }, 0)    
-			  })  
-			})
+<div class="row">
+	<div class="col-md-2">
+		<div id="wrapper">
+		  <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
+		  <div class="menu">
+		    <label class="go-back margen-arriba" for="menu" ng-click="$gallery.verGaleria()"><span>Toggle</span></label>
+		  </div>
+		</div> <!-- #wrapper-->
 
-			$(document).on("click", ".img-c.active", function() {
-			  let copy = $(this)
-			  copy.removeClass("positioned active").addClass("postactive")
-			  setTimeout(function() {
-			    copy.remove();
-			  }, 500)
-			})
-	    </script>
+		<button type="button" class="boton-audio boton-audio-menu" onclick="Audio('galeria','Volume.svg','Volume-off.svg')">
+	      <img id="sound_img" src="images/Volume-off.svg" alt=""> 
+	    </button>
+	    <p id="ayudae" class="texto-ayuda">Pulse la imagen deseada para visualizarla</p>
+	    <p id="ayudas" class="texto-ayuda texto-ayuda-salir">Pulse sobre la imagen para regresar</p>
 	</div>
+
+	<div class="col-md-8">			
+		<div class="mycontainer">
+			<div class="gallery2">
+			    <div class="img-w">
+			    	<img src="images/gallery/aereo/2.jpg" alt="" />
+			    </div>
+			    <div class="img-w">
+			    	<img src="images/gallery/aereo/3.jpg" alt="" />
+			    </div>
+			    <div class="img-w">
+			    	<img src="images/gallery/aereo/4.jpg" alt="" />
+			    </div>
+			    <div class="img-w">
+			    	<img src="images/gallery/aereo/5.jpg" alt="" />
+			    </div>
+			    <div class="img-w">
+			    	<img src="images/gallery/aereo/6.jpg" alt="" />
+			    </div>
+			    <div class="img-w">
+			    	<img src="images/gallery/aereo/7.jpg" alt="" />
+			    </div>
+			    <div class="img-w">
+			    	<img src="images/gallery/aereo/8.jpg" alt="" />
+			    </div>
+			    <div class="img-w">
+			    	<img src="images/gallery/aereo/9.jpg" alt="" />
+			    </div>
+			    <div class="img-w">
+			    	<img src="images/gallery/aereo/10.jpg" alt="" />
+			    </div>
+  <!-- <script type="text/javascript" src="scripts/events.effects.js"></script> -->
+			    
+			    <script type="text/javascript" src="scripts/gallery.effects.js"></script>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-2"></div>
 </div>

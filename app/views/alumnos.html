@@ -1,56 +1,39 @@
-<div id="wrapper">
-  <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
-  <div class="menu">
-    <label class="menu-toggle" for="menu"><span>Toggle</span></label>
-    <ul>
-      <li>
-        <a href="#">Menu</a>
-      </li>
-    </ul>
-  </div>
-</div> <!-- #wrapper-->
+<div class="row">
+  <div class="col-md-2 col-sm-2">
+    <div id="wrapper">
+      <!-- <input type="checkbox" id="menu" name="menu" class="menu-checkbox"> -->
+      <div class="menu">
+        <label class="go-back margen-arriba" for="menu" ng-click="$alumnos.verMenu()"><span>Toggle</span></label>
+      </div>
+    </div> <!-- #wrapper-->
 
-<div class="accordion">
-  <ul>
-    <li>
+    <button type="button" class="boton-audio boton-audio-menu" onclick="Audio('disciplinas','Volume.svg','Volume-off.svg')">
+      <img id="sound_img" src="images/Volume-off.svg" alt=""> 
+    </button>
+
+    <!-- <p id="ayudae" class="texto-ayuda">Pulse la imagen deseada para ver los detalles de la disciplina</p> -->
+  </div>
+<!-- <div class="row container"> -->
+  <div class="col-md-5 col-sm-5">
+    <a href="views/alumnosIngresar.html"><button class="btn-lg boton botones-sesion">Ingresar</button></a><br><br>
+    <!-- <div class="discipline-image-card botones-sesion">
+      <img ng-click="$alumnos.login()" class="discipline-image" src="images/login.jpg">
       <div>
-        <a ng-click="$dis.verAereo()">
-          <h2>Danza aérea</h2>
-          <p>Leer una breve descripción e información de la disciplina</p>
-        </a>
+        <h2>Iniciar sesión</h2>
+        <p>Ingrese con su nombre de usuario y contraseña</p>
       </div>
-    </li>
-    <li>
+    </div> -->
+  </div>
+
+  <div class="col-md-5 col-sm-5">
+    <button class="btn-lg boton botones-sesion" ng-click="$alumnos.registrarAlumno()"><a href="views/alumnosRegistrar.html">Registrarse</a></button><br><br>
+    <!-- <div class="discipline-image-card botones-sesion">
+      <img ng-click="$alumnos.registrarAlumno()" class="discipline-image" src="images/registrarse.png">
       <div>
-        <a ng-click="$dis.verBallet()">
-          <h2>Ballet</h2>
-          <p>Leer una breve descripción e información de la disciplina</p>
-        </a>
+        <h2>Registrarse</h2>
+        <p>Forme parte de la mejor escuela de danza </p>
       </div>
-    </li>
-    <li>
-      <div>
-        <a ng-click="$dis.verContemporaneo()">
-          <h2>Danza Contemporánea</h2>
-          <p>Leer una breve descripción e información de la disciplina</p>
-        </a>
-      </div>
-    </li>
-    <li>
-      <div>
-        <a ng-click="$dis.verHipHop()">
-          <h2>Hip hop</h2>
-          <p>Leer una breve descripción e información de la disciplina</p>
-        </a>
-      </div>
-    </li>
-    <li>
-      <div>
-        <a ng-click="$dis.verJazz()">
-          <h2>Jazz</h2>
-          <p>Leer una breve descripción e información de la disciplina</p>
-        </a>
-      </div>
-    </li>
-  </ul>
+    </div> -->
+  </div>
+<!-- </div> -->
 </div>

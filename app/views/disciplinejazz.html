@@ -1,75 +1,91 @@
 <div id="wrapper">
   <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
   <div class="menu">
-    <label class="go-back" for="menu" ng-click="$dis.verDisciplinas()"><span>Toggle</span></label>
+    <label class="go-back margen-arriba-disciplinas" for="menu" ng-click="$dis.verDisciplinas()"><span>Toggle</span></label>
   </div>
 </div> <!-- #wrapper-->
 
 <svg id="icons" xmlns="http://www.w3.org/2000/svg">  
   <symbol id="icon-arrow" viewBox="0 0 476.213 476.213" >
   <polygon fill="inherit" points="347.5,324.393 253.353,418.541 253.353,0 223.353,0 223.353,419.033 128.713,324.393 107.5,345.607 
- 	238.107,476.213 368.713,345.606 "/>
+  238.107,476.213 368.713,345.606 "/>
   </symbol>
 </svg>
 
-<div class="slider-content container-single-discipline">
-  <div class="header-wrapper">
-    <div class="header">
-      <div class="logo-wrapper">
-        <div class="logo">DCA</div>
-      </div>
-      <div class="shop-wrapper"></div>
-    </div>
-  </div>
-  
-  <div class="number-wrapper">
-    <div class="number-count">
-      <div class="number">01</div>
-    </div>
-  </div>
-  
-  <div class="nav-wrapper">
-    <div class="nav-arrows">
-      <div class="nav-up">
-           <svg id="arrow-up">
-            <use xlink:href="#icon-arrow"></use>
-          </svg>
-       </div>
-      <div class="nav-line"></div>
-      <div class="nav-down">
-         <svg id="arrow-down">
-            <use xlink:href="#icon-arrow"></use>
-          </svg>
+<div class="row">
+  <br><br><br>
+  <div class="slider-content container-single-discipline">
+    <div class="header-wrapper">
+      <div class="header">
+        <div class="logo-wrapper">
+          <div class="logo">DCA</div>
+        </div>
+        <div class="shop-wrapper"></div>
       </div>
     </div>
-  </div>
-  
-  <div class="slider-wrapper">
-    <div class="slider-container">                       
-      <div class="slide active" data-order="1">
-          <div class="slide-content txt">
-            <div class="txt-wrapper">
-              <h2>Jazz</h2>
-              <span class="subtitle">Si pudiese decir lo que quería decir, no habría razón para bailarlo</span>
-              <p class="excerpt"><span>"Isadora Duncan"</span><br>La danza jazz es una clasificación compartida por una amplia gama de estilos de baile. Antes de la década de 1950, se refiere a la danza originada a partir de estilos de danza africana vernácula de América.</p>
+    
+    <div class="number-wrapper">
+      <div class="number-count">
+        <div class="number">01</div>
+      </div>
+    </div>
+    
+    <div class="number-wrapper">
+      <div class="number-count">
+        <div class="number">01</div>
+      </div>
+    </div>
+    
+    <div class="nav-wrapper">
+      <div class="nav-arrows">
+        <div class="nav-up">
+          <!-- <button src="images/go-back2.png" id="arrow-up"></button> -->
+        <image src="images/go-back2.png" class="flecha-arriba" id="arrow-up"></image>
+
+             <!-- <svg id="arrow-up">
+              <use xlink:href="#icon-arrow"></use>
+            </svg> -->
+         </div>
+        <div class="nav-line"></div>
+        <br><br><br><br>
+        <div class="nav-down">
+        <!-- <button class ="btn" id="arrow-up">Siguiente</button> -->
+        <!-- <button src="images/go-back2.png" id="arrow-up"></button> -->
+        <image src="images/go-back2.png" id="arrow-down"></image>
+           <!-- <svg id="arrow-down">
+              <use xlink:href="#icon-arrow"></use>
+            </svg> -->
+        </div>
+      </div>
+    </div> 
+    
+    <div class="slider-wrapper">
+      <div class="slider-container">                       
+        <div class="slide active" data-order="1">
+            <div class="slide-content txt">
+              <div class="txt-wrapper">
+                <h2>Jazz</h2>
+                <span class="subtitle">Si pudiese decir lo que quería decir, no habría razón para bailarlo</span>
+                <p class="excerpt"><span>"Isadora Duncan"</span><br>La danza jazz es una clasificación compartida por una amplia gama de estilos de baile. Antes de la década de 1950, se refiere a la danza originada a partir de estilos de danza africana vernácula de América.</p>
+              </div>
             </div>
-          </div>
-          <div class="slide-content img">
-            <img src="images/disciplines/jazz/2.jpg">
-          </div>
+            <div class="slide-content img">
+              <img src="images/disciplines/jazz/2.jpg">
+            </div>
+          </div>  
+        <div class="slide" data-order="2">
+            <div class="slide-content txt">
+              <div class="txt-wrapper">
+                <h2>Horario</h2>
+                 <p class="excerpt">Lunes de 5:00 - 6:00pm <br> Miércoles 5:00 - 6:00pm </p>
+                 <!-- <button>Shop now</button> -->
+              </div>
+            </div>
+            <div class="slide-content img">
+              <img src="images/disciplines/jazz/2.jpg">
+            </div>
         </div>  
-      <div class="slide" data-order="2">
-          <div class="slide-content txt">
-            <div class="txt-wrapper">
-              <h2>Horario</h2>
-               <p class="excerpt">Lunes de 5:00 - 6:00pm <br> Miércoles 5:00 - 6:00pm </p>
-               <button>Shop now</button>
-            </div>
-          </div>
-          <div class="slide-content img">
-            <img src="images/disciplines/jazz/2.jpg">
-          </div>
-      </div>  
+      </div>
     </div>
   </div>
 </div>

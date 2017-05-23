@@ -1,0 +1,76 @@
+<audio id="eventos" src="audio/eventos.wav">
+  <p>Tu navegador no implementa el elemento audio</p>
+</audio>
+
+<div class="row">
+  <div class="col-md-2 col-sm-2">
+    <div id="wrapper">
+      <!-- <input type="checkbox" id="menu" name="menu" class="menu-checkbox"> -->
+      <div class="menu">
+        <label class="go-back margen-arriba" for="menu" ng-click="$eventos.verMenu()"><span>Toggle</span></label>
+      </div>
+    </div> <!-- #wrapper-->
+
+    <button type="button" class="boton-audio boton-audio-menu" onclick="Audio('eventos','Volume.svg','Volume-off.svg')">
+      <img id="sound_img" src="images/Volume-off.svg" alt=""> 
+    </button>
+    <button class="boton boton-costado" ng-click="$eventos.verEventosProximos()">Próximos</button>
+  </div>
+
+  <div class="col-md-8 col-sm-8">
+    <h3 id="h3-cards" class="h3-marks">Eventos pasados</h3>
+    <div class="card-columns one-ui-kit-example-container">
+      <div class="card card-inverse">
+        <img class="card-img" style="width:100%;" src="images/events/pasados/evento4.jpg" alt="Card image">
+        <div class="card-img-overlay">
+          <!-- <h4 class="card-title">Festival de fin de cursos 2016</h4>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text">Ve las principales fotos de nuestro festival de fin de cursos 2016.</p>
+          <br> -->
+          
+        </div>
+      </div>
+
+      <div class="card text-xs-center">
+        <div class="card-block">
+          <blockquote class="card-blockquote">
+            <cite title="Source Title">"Una gran escuela con un excelente método"</cite>          
+            <footer>Rico Hernández, Festival de fin de cursos 2016</footer>
+          </blockquote>
+          <div class="card-block">
+          
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top" style="width:100%;" src="images/events/pasados/evento11.jpg" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Festival de fin de cursos 2016</h4>
+          <p class="card-text">Ve las principales fotos de nuestro festival de fin de cursos 2016.</p>          
+        </div>
+      </div>
+
+      <div class="card card-inverse" ng-click="$eventos.verGaleriaEventos()">
+        <img class="card-img" style="width:100%;" src="images/events/pasados/evento7.jpg" alt="Card image">
+        <div class="card-img-overlay">
+          <!-- <h4 class="card-title">Festival de fin de cursos 2015</h4>
+          <p class="card-text">Ve las principales fotos de nuestro festival de fin de cursos 2015.</p> -->
+          
+        </div>
+      </div>
+
+      <div class="card card-inverse">
+        <img class="card-img" style="width:100%;" src="images/events/pasados/evento3.jpg" alt="Card image">
+        <div class="card-img-overlay">
+          <!-- <h4 class="card-title">Festival de fin de cursos 2014</h4>
+          <p class="card-text">Ve las principales fotos de nuestro festival de fin de cursos 2014.</p> -->
+          
+        </div>
+      </div> <!-- /card-columns -->
+    </div><!-- /container for CARDS -->
+  </div>
+</div>
+<div class="col-md-2 col-sm-2">
+  
+</div>
