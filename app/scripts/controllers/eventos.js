@@ -15,13 +15,16 @@ angular.module('proyectoFinalApp')
     	$location.path("/printEvents");
     };
 
-    $ctrl.verGaleriaEventos = function(){
-    	$location.path("/galleryBallet");
+    $ctrl.verMenu = function(){
+      $location.path("/");
     };
 
-    $ctrl.verDisciplinas = function(){
-    	$location.path("/disciplineJazz");
+    $ctrl.verEventosPasados = function(){
+        console.log("juay? :'(");
+      $location.path("/eventosPasados");
     };
 
-
+    $ctrl.verEventosProximos = function(){
+      $location.path("/eventos");
+    };
   });

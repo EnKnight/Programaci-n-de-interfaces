@@ -20,11 +20,11 @@ angular.module('proyectoFinalApp')
     };
 
     $ctrl.verMaestros = function(){
-
+        $location.path("/maestros");
     };
 
     $ctrl.verAlumnos = function(){
-
+        $location.path("/alumnos");
     };
 
     $ctrl.verGaleria = function(){
