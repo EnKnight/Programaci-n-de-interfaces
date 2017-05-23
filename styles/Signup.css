@@ -200,7 +200,9 @@ main {
   font: 700 16px 'Montserrat', sans-serif;
 }
 
-.text-small-uppercase {
+.text-small-uppercase, 
+.muestra-dropdowns-2, 
+.muestra-dropdowns{
   color: #74bdb7;
   font: 700 .75rem 'Montserrat';
   letter-spacing: .08rem;
@@ -224,25 +226,27 @@ main {
   }
 }
 
-#submit{
+#submit, .muestra-dropdowns-2{
   display: none;
+  position: absolute;
 }
 
 .dropdowns{
   display: none;
 }
 
-.muestra-dropdowns{
+.muestra-dropdowns, .muestra-dropdowns-2{
   text-align: center;
   background-color: #f37b56;
   text-decoration: none;
   color: #FFFFFF;
   margin: 10px 0;
-  padding: 10px 20px;
+  padding: 15px 20px;
   cursor: pointer;
 }
 
-.muestra-dropdowns:hover{
+.muestra-dropdowns:hover,
+.muestra-dropdowns-2:hover{
   background-color: #F79575;
 }
 
