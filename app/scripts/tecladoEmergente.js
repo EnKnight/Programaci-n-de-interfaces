@@ -1,3 +1,5 @@
+'use strict';
+
 $(document).ready(function(){
   $(document).mousemove(function(e){
      TweenLite.to($('body'), 

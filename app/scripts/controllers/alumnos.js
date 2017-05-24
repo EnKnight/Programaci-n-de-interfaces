@@ -10,8 +10,19 @@
 angular.module('proyectoFinalApp')
   .controller('AlumnosCtrl', function ($location, $scope, $http) {
     var $ctrl = this;
-    var host = "http://192.168.1.74";
-
+    var cta = "?nomusr=dena&passwd=den209";    
+    
+    $http.get("http://127.0.0.1/UAA/DCA/loginusuario.php")
+   .then(function (response) {
+      $scope.usuario = response.data.usuario;
+    });
+   // function obtenerDatos(){
+   //  $http.get("http://127.0.0.1/UAA/DCA/loginusuario.php")
+   //   .then(function (response) {
+   //      $scope.usuario = response.data.usuario;
+   //    });
+   //   console.log("obteniendo datos :D");
+   // }
     $ctrl.verMenu = function(){
     	$location.path("/");
     };
@@ -29,11 +40,20 @@ angular.module('proyectoFinalApp')
   	};
 
     $ctrl.validarLogin = function () {
-      $http.get('../../php/loginusuario.php?nomusr=dena&passwd=den209').then(function(response){
+      $http.get("http://127.0.0.1/UAA/DCA/loginusuario.php")
+     .then(function (response) {
         $scope.usuario = response.data.usuario;
       });
-      console.log($scope.usuario);
+      // console.log($scope.usuario);
+      // obtenerDatos();
       console.log('yiah');
+      // console.log($scope.usuario.nombre);
+      angular.forEach($scope.usuario, function (usr) {
+            console.log(usr.nombre);
+            // proys[edo.id] = true;
+            // mex[edo.id].animate({fill: "#CD92FF",stroke: "#fff"},500);
+          });
+      $location.path("/bienvenidoAlumno");
       // var mysql      = require('mysql');
       // var connection = mysql.createConnection({
       //   host     : 'localhost',

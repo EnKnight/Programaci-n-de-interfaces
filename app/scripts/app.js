@@ -41,10 +41,20 @@ angular
         controller: 'AlumnosCtrl',
         controllerAs: '$alumnos'
       })
+      .when('/bienvenidoAlumno', {
+        templateUrl: 'views/bienvenidoalumno.html',
+        controller: 'AlumnosCtrl',
+        controllerAs: '$alumnos'
+      })
       .when('/login', {
         templateUrl: 'views/login.html',
         controller: 'AlumnosCtrl',
         controllerAs: '$alumnos'
+      })
+      .when('/loginMaestros', {
+        templateUrl: 'views/loginmaestros.html',
+        controller: 'MaestrosCtrl',
+        controllerAs: '$maestros'
       })
       .when('/verClases', {
         templateUrl: 'views/verclases.html',
