@@ -1,0 +1,63 @@
+<audio id="eventos" src="audio/eventos.wav">
+  <p>Tu navegador no implementa el elemento audio</p>
+</audio>
+
+<div class="row">
+  <div class="col-md-2 col-sm-2">
+    <div id="wrapper">
+      <!-- <input type="checkbox" id="menu" name="menu" class="menu-checkbox"> -->
+      <div class="menu">
+        <label class="go-back margen-arriba" for="menu" ng-click="$eventos.verMenu()"><span>Toggle</span></label>
+      </div>
+    </div> <!-- #wrapper-->
+    
+    <!-- <button type="button" class="boton-audio boton-audio-menu" onclick="Audio('eventos','Volume.svg','Volume-off.svg')">
+      <img id="sound_img" src="images/Volume-off.svg" alt=""> 
+    </button>
+    <button class="boton boton-costado" ng-click="$eventos.verEventosPasados()">Pasados</button>
+    <p id="ayudae" class="texto-ayuda">Pulse la imagen deseada para visualizarla</p>
+    <p id="ayudas" class="texto-ayuda texto-ayuda-salir">Pulse sobre la imagen para regresar</p> -->
+
+  </div>
+
+  <div class="col-md-8 col-sm-8 events-container">
+    <div ng-repeat="usr in usuario">
+      <p class="texto-ayuda">{{usr.nombre}}</p>
+    </div>
+    <!-- <h3 id="h3-cards" class="h3-marks">Eventos próximos</h3>
+    <div class="gallery2">
+      <div class="img-w">
+        <img src="images/events/proximos/evento4.jpg" alt="" />
+      </div>
+      <div class="img-w">
+        <img src="images/events/proximos/evento2.jpg" alt="" />
+      </div>
+      <div class="img-w">
+        <img src="images/events/proximos/evento3.jpg" alt="" />
+      </div>
+      <div class="img-w">
+        <img src="images/events/proximos/evento10.jpg" alt="" />
+      </div>
+      <div class="img-w">
+        <img src="images/events/proximos/evento5.jpg" alt="" />
+      </div>
+      <div class="img-w">
+        <img src="images/events/proximos/evento6.jpg" alt="" />
+      </div>
+      <div class="img-w">
+        <img src="images/events/proximos/evento7.jpg" alt="" />
+      </div>
+      <div class="img-w">
+        <img src="images/events/proximos/evento8.jpg" alt="" />
+      </div>
+      <div class="img-w">
+        <img src="images/events/proximos/evento9.jpg" alt="" />
+      </div>
+    </div>
+  </div> -->
+  
+  <div class="col-md-2 col-sm-2">
+    <!-- <button id="imprimir" class="boton boton-costado-imprimir" ng-click="$eventos.imprimir()">Imprimir</button> -->
+  </div>
+  <!-- <script type="text/javascript" src="scripts/events.effects.js"></script> -->
+</div>
