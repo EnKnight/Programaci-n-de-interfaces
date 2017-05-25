@@ -66,6 +66,11 @@ angular
         controller: 'MaestrosCtrl',
         controllerAs: '$maestros'
       })
+      .when('/horariosMaestros', {
+        templateUrl: 'views/horariosmaestros.html',
+        controller: 'MaestrosCtrl',
+        controllerAs: '$maestros'
+      })
       .when('/maestrosAereo', {
         templateUrl: 'views/maestrosaereo.html',
         controller: 'MaestrosCtrl',
