@@ -21,7 +21,9 @@ angular.module('proyectoFinalApp')
    // angular.forEach($scope.usuario, function (usr) {
    //          console.log(usr.nom);
    //        });
-
+   $ctrl.verMaestros = function(){
+    $location.path("/maestros");
+   }
    $ctrl.login = function(){
     $location.path("/loginMaestros");
    }
@@ -121,4 +123,113 @@ angular.module('proyectoFinalApp')
     $ctrl.verJazz = function(){
         $location.path("/maestrosJazz");        
     };
+
+    $scope.aereo = [
+      {
+        "nombre": "Pablo",
+        "ap": "Herrera",
+        "desc":"Inició su carrera a los 17 años cuando decidió entrar a la licenciatura en dana contemporánea, concluyendola en el 2015 y trabajando en DCA desde entonces"
+      },
+      {
+        "nombre": "Joaquin",
+        "ap": "Javala",
+        "desc":"Inició su carrera a los 17 años cuando decidió entrar a la licenciatura en dana contemporánea, concluyendola en el 2015 y trabajando en DCA desde entonces"
+      },
+      {
+        "nombre": "Enrique",
+        "ap": "Soto",
+        "desc":"Inició su carrera a los 17 años cuando decidió entrar a la licenciatura en dana contemporánea, concluyendola en el 2015 y trabajando en DCA desde entonces"
+      },
+      {
+        "nombre": "Victor",
+        "ap": "Gonzalez",
+        "desc":"Inició su carrera a los 17 años cuando decidió entrar a la licenciatura en dana contemporánea, concluyendola en el 2015 y trabajando en DCA desde entonces"
+      }
+    ];
+    $scope.ballet = [
+      {
+        "nombre": "Cristina",
+        "ap": "Aranda",
+        "desc":"Inició su carrera a los 17 años cuando decidió entrar a la licenciatura en dana contemporánea, concluyendola en el 2015 y trabajando en DCA desde entonces"
+      },
+      {
+        "nombre": "Adriana",
+        "ap": "Piña",
+        "desc":"Inició su carrera a los 17 años cuando decidió entrar a la licenciatura en dana contemporánea, concluyendola en el 2015 y trabajando en DCA desde entonces"
+      },
+      {
+        "nombre": "Enrique",
+        "ap": "Soto",
+        "desc":"Inició su carrera a los 17 años cuando decidió entrar a la licenciatura en dana contemporánea, concluyendola en el 2015 y trabajando en DCA desde entonces"
+      }
+    ];
+    $scope.contemporaneo = [
+      {
+        "nombre": "Pablo",
+        "ap": "Herrera",
+        "desc":"Inició su carrera a los 17 años cuando decidió entrar a la licenciatura en dana contemporánea, concluyendola en el 2015 y trabajando en DCA desde entonces"
+      },
+      {
+        "nombre": "Joaquin",
+        "ap": "Javala",
+        "desc":"Inició su carrera a los 17 años cuando decidió entrar a la licenciatura en dana contemporánea, concluyendola en el 2015 y trabajando en DCA desde entonces"
+      },
+      {
+        "nombre": "Enrique",
+        "ap": "Soto",
+        "desc":"Inició su carrera a los 17 años cuando decidió entrar a la licenciatura en dana contemporánea, concluyendola en el 2015 y trabajando en DCA desde entonces"
+      },
+      {
+        "nombre": "John",
+        "ap": "Snow",
+        "desc":"Inició su carrera a los 17 años cuando decidió entrar a la licenciatura en dana contemporánea, concluyendola en el 2015 y trabajando en DCA desde entonces"
+      }
+    ];
+    $scope.hiphop = [
+      {
+        "nombre": "Gary",
+        "ap": "Ochoa",
+        "desc":"Inició su carrera a los 17 años cuando decidió entrar a la licenciatura en dana contemporánea, concluyendola en el 2015 y trabajando en DCA desde entonces"
+      },
+      {
+        "nombre": "Paulina",
+        "ap": "Acosta",
+        "desc":"Inició su carrera a los 17 años cuando decidió entrar a la licenciatura en dana contemporánea, concluyendola en el 2015 y trabajando en DCA desde entonces"
+      },
+      {
+        "nombre": "Enrique",
+        "ap": "Soto",
+        "desc":"Inició su carrera a los 17 años cuando decidió entrar a la licenciatura en dana contemporánea, concluyendola en el 2015 y trabajando en DCA desde entonces"
+      },
+      {
+        "nombre": "John",
+        "ap": "Snow",
+        "desc":"Inició su carrera a los 17 años cuando decidió entrar a la licenciatura en dana contemporánea, concluyendola en el 2015 y trabajando en DCA desde entonces"
+      }
+    ];
+
+    $scope.jazz = [
+      {
+        "nombre": "Nicolas",
+        "ap": "Campos",
+        "desc":"Inició su carrera a los 17 años cuando decidió entrar a la licenciatura en dana contemporánea, concluyendola en el 2015 y trabajando en DCA desde entonces"
+      },
+      {
+        "nombre": "Michelle",
+        "ap": "Mendoza",
+        "desc":"Inició su carrera a los 17 años cuando decidió entrar a la licenciatura en dana contemporánea, concluyendola en el 2015 y trabajando en DCA desde entonces"
+      },
+      {
+        "nombre": "Enrique",
+        "ap": "Soto",
+        "desc":"Inició su carrera a los 17 años cuando decidió entrar a la licenciatura en dana contemporánea, concluyendola en el 2015 y trabajando en DCA desde entonces"
+      },
+      {
+        "nombre": "John",
+        "ap": "Snow",
+        "desc":"Inició su carrera a los 17 años cuando decidió entrar a la licenciatura en dana contemporánea, concluyendola en el 2015 y trabajando en DCA desde entonces"
+      }
+    ];
+
+    // };
   });
