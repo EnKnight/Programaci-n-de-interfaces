@@ -10,7 +10,7 @@
 
     <div class="card-columns one-ui-kit-example-container col-md-10">
     	<div class="card" ng-repeat="m in hiphop">
-	        <img class="card-img-top" style="width:100%;" src="images/events/pasados/evento11.jpg" alt="Card image cap">
+	        <img class="card-img-top" style="width:100%;" ng-src="{{m.img}}" alt="Card image cap">
 	        <div class="card-block">
 	          <h4 class="card-title">{{m.nombre}}&nbsp;{{m.ap}}</h4>
 	          <p class="card-text">{{m.desc}}</p>          
