@@ -135,7 +135,7 @@ angular.module('proyectoFinalApp')
         "nombre": "Victor",
         "ap": "Gonzalez",
         "img": "../images/maestros/aereo/3.jpg",
-        "desc":"Estudió la licenciatura en teatro en la universidad de las artes, en el 2010, asisitió a un curso en la ciudad de México de danza aérea impartida por un ex miembro del Cirque du Soleil, obteniendo una certificación internacional, siendo maestro de la disciplina desde el 2013"
+        "desc":"Estudió la licenciatura en teatro en la universidad de las artes; en el 2010, asisitió a un curso en la ciudad de México de danza aérea impartida por un ex miembro del Cirque du Soleil, obteniendo una certificación internacional, para luego ser maestro de la disciplina desde el 2013"
       }/*,
       {
         "nombre": "Ernesto",
@@ -155,7 +155,7 @@ angular.module('proyectoFinalApp')
         "nombre": "Cristina",
         "ap": "Aranda",
         "img": "../images/maestros/ballet/1.jpg",
-        "desc":"Desde secundaria decidió ingresar al mundo del baile al estudiar ballet en el ICA, y ha dado clases desde los hace más de 9 años"
+        "desc":"Desde secundaria decidió ingresar al mundo del baile al estudiar ballet en el ICA, y ha dado clases desde hace más de 9 años"
       },
       {
         "nombre": "Adriana",
@@ -175,13 +175,13 @@ angular.module('proyectoFinalApp')
         "nombre": "Alejandra",
         "ap": "Legaria",
         "img": "../images/maestros/contemporaneo/1.jpg",
-        "desc":"Inicio su carrera a los 10 años ya que le llamaba mucho la atención este tipo de danza, debido a su gran carrera desde hace 2 años trabaja con nosotros siendo un gran éxito su clase."
+        "desc":"Inicio su carrera a los 10 años al ser enormemente atraída por este tipo de danza, debido a su gran carrera desde hace 2 años trabaja con nosotros siendo un gran éxito su clase."
       },
       {
         "nombre": "Fernanda",
         "ap": "Zapata",
         "img": "../images/maestros/contemporaneo/2.jpg",
-        "desc":"Inicio su carrera a los 15 años, le apasiona la danza tanto que a sus 18 años ya era maestra de danza folclórica y ahora trabaja con nosotros como maestra en danza contemporánea."
+        "desc":"Inicio su carrera a los 15 años, le apasiona la danza tanto que a sus 18 años ya era maestra de danza folklórica y ahora trabaja con nosotros como maestra en danza contemporánea."
       }/*,
       {
         "nombre": "Enrique",
@@ -199,7 +199,7 @@ angular.module('proyectoFinalApp')
         "nombre": "Gary",
         "ap": "Ochoa",
         "img": "../images/maestros/hip-hop/1.jpg",
-        "desc":"4 años de carrera profesional, desde niño tenía pasión por el baile así que la corta edad de 5 años sus pasres lo metieron a clases y aquí inicio su auje en el baile, actualmente tiene con nosotros 2 años."
+        "desc":"4 años de carrera profesional, desde niño tenía pasión por el baile así que la corta edad de 5 años inició en el medio artístico, actualmente tiene con nosotros 2 años."
       },
       {
         "nombre": "Paulina",
@@ -224,13 +224,13 @@ angular.module('proyectoFinalApp')
         "nombre": "Said",
         "ap": "Castorena",
         "img": "../images/maestros/jazz/1.jpg",
-        "desc":"Actualmente cuenta con una importante trayectoria como bailarin de jazz, maestro de yoga y bailarin de ballet, Su obra está considerada entre las más valiosas dentro del género jaz en Aguscalientes, llegando a ser catalogado como “El maestro del jazz”"
+        "desc":"Actualmente cuenta con una importante trayectoria como bailarin de jazz, maestro de yoga y bailarín de ballet, Su obra está considerada entre las más valiosas dentro del género jazz en Aguscalientes, llegando a ser catalogado como “El maestro del jazz”"
       },
       {
         "nombre": "Michelle",
         "ap": "Mendoza",
         "img": "../images/maestros/jazz/2.jpg",
-        "desc":"Bailarína, maestra de danza y coreógrafa mexicana. Es considerado el precursora de la danza moderna, además de iniciador de las técnicas coreográficas que aún hoy se siguen y de que fue el primero en resaltar el rol masculino entre las compañías de danza."
+        "desc":"Bailarina, maestra de danza y coreógrafa mexicana. Es considerada la precursora de la danza moderna, además de iniciador de las técnicas coreográficas que aún hoy se siguen y de que fue el primero en resaltar el rol masculino entre las compañías de danza."
       }/*,
       {
         "nombre": "Enrique",
