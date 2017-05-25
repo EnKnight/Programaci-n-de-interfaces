@@ -7,23 +7,40 @@
     <div id="wrapper">
       <!-- <input type="checkbox" id="menu" name="menu" class="menu-checkbox"> -->
       <div class="menu">
-        <label class="go-back margen-arriba" for="menu" ng-click="$eventos.verMenu()"><span>Toggle</span></label>
+        <label class="go-back margen-arriba" for="menu" ng-click="$maestros.login()"><span>Toggle</span></label>
       </div>
     </div> <!-- #wrapper-->
     
     <!-- <button type="button" class="boton-audio boton-audio-menu" onclick="Audio('eventos','Volume.svg','Volume-off.svg')">
       <img id="sound_img" src="images/Volume-off.svg" alt=""> 
     </button>
-    <button class="boton boton-costado" ng-click="$eventos.verEventosPasados()">Pasados</button>
+    <button class="boton boton-costado" ng-click="$maestros.verEventosPasados()">Pasados</button>
     <p id="ayudae" class="texto-ayuda">Pulse la imagen deseada para visualizarla</p>
     <p id="ayudas" class="texto-ayuda texto-ayuda-salir">Pulse sobre la imagen para regresar</p> -->
 
   </div>
 
   <div class="col-md-8 col-sm-8 events-container">
-    <div ng-repeat="usr in usuario">
-      <p class="texto-ayuda">{{usr.grupo}}</p>
-    </div>
+  <!-- <p class="texto-ayuda">Bienvenido(a) de nuevo {{usuario.nom}} !!</p> -->
+  <button class="boton " ng-click="$maestros.consultarHorario()">Horario</button>
+    <table class="table texto-ayuda">
+      <thead>
+        <tr>
+          <td>Horario</td>
+          <td>Dias</td>
+          <td>Fecha inicio</td>
+          <td>Fecha final</td>
+        </tr>
+      </thead>
+      <tbody ng-repeat="h in horario">
+        <tr>
+          <td>{{h.horario}}</td>
+          <td>{{h.dias}}</td>
+          <td>{{h.fechai}}</td>
+          <td>{{h.fechaf}}</td>
+        </tr>
+      </tbody>
+    </table>
     <!-- <h3 id="h3-cards" class="h3-marks">Eventos próximos</h3>
     <div class="gallery2">
       <div class="img-w">
@@ -57,7 +74,7 @@
   </div> -->
   
   <div class="col-md-2 col-sm-2">
-    <!-- <button id="imprimir" class="boton boton-costado-imprimir" ng-click="$eventos.imprimir()">Imprimir</button> -->
+    <!-- <button id="imprimir" class="boton boton-costado-imprimir" ng-click="$maestros.imprimir()">Imprimir</button> -->
   </div>
   <!-- <script type="text/javascript" src="scripts/events.effects.js"></script> -->
 </div>

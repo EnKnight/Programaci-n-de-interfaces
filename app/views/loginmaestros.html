@@ -21,11 +21,16 @@
         <h2 class="text-headline">DCA</h2>
         <h3 class="text-subheadline">Academia de Baile</h2>
       </div>
-      <form>
+      <form name="$maestros.form">
         <span>
           <!--style="display: none;"-->
-          <label for="username" id="lbl_username" class="text-small-uppercase">Username</label>
-          <input class="text-body" id="username" name="username" type="text">
+          <label for="username" id="lbl_username" class="text-small-uppercase">Nombre de usuario</label>
+          <input class="text-body" id="username" name="username" type="text" ng-model="$maestros.nomusr">
+        </span>
+        <span>
+          <!--style="display: none;"-->
+          <label for="username" id="lbl_username" class="text-small-uppercase">Contraseña</label>
+          <input class="text-body" id="username" name="username" type="password" ng-model="$maestros.passwd">
         </span>
         <!--<span>
           <label for="pasword" id="lbl_pasword" class="text-small-uppercase">Password</label>
@@ -47,14 +52,15 @@
           <label for="s_last_name" class="text-small-uppercase">Apellido Materno</label>
           <input class="text-body" id="s_last_name" name="s_last_name" type="text" required>
         </span>-->
-        <a href="conection.php">
+        <button class="text-small-uppercase" id="submit" ng-click="$maestros.validarLogin()">Iniciar a danzar</button>
+        <!-- <a href="conection.php">
           <input class="text-small-uppercase" id="submit" type="submit" value="Inciar a Danzar">
           da click
-        </a>
+        </a> -->
       </form>
     </main>
   
-    <script src="js/singup.js"></script>
+    <script src="scripts/signup.js"></script>
   </div>
 
   <div id="kb-container" style="display:none;">
@@ -115,5 +121,5 @@
       <li class="space lastitem">&nbsp;</li>
     </ul>
   </div>
-  <script type="text/javascript" src="scripts/consultarbd.js"></script>
+  <!-- <script type="text/javascript" src="scripts/consultarbd.js"></script> -->
 </div>
