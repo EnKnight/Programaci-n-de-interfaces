@@ -98,6 +98,29 @@ and open the template in the editor.
   width: 220px;
   margin-top: 25px;
 }
+
+.boton-eventos{
+   background: #a0aab0;
+  background-image: -webkit-linear-gradient(top, #a0aab0, #808487);
+  background-image: -moz-linear-gradient(top, #a0aab0, #808487);
+  background-image: -ms-linear-gradient(top, #a0aab0, #808487);
+  background-image: -o-linear-gradient(top, #a0aab0, #808487);
+  background-image: linear-gradient(to bottom, #a0aab0, #808487);
+  -webkit-border-radius: 11;
+  -moz-border-radius: 11;
+  border-radius: 11px;
+  text-shadow: 4px 0px 0px #6b686b;
+  -webkit-box-shadow: 0px 0px 9px #000000;
+  -moz-box-shadow: 0px 0px 9px #000000;
+  box-shadow: 0px 0px 9px #000000;
+  font-family: Arial;
+  color: #fcf9fc;
+  font-size: 38px;
+  padding: 7px 20px 10px 20px;
+  text-decoration: none;
+  width: 190px;
+  margin-top: 25px;
+}
 /*.button:hover {
    border-top-color: #90979c;
    background: #90979c;
@@ -116,8 +139,8 @@ and open the template in the editor.
 }
 
 .boton-audio-menu-inicio{
-  margin-top: 150px;
-  margin-left: 60px;
+  margin-top: 200px;
+  margin-left: 70px;
   
 }
 

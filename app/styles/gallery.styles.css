@@ -8,6 +8,7 @@
   margin: auto;
   border-radius: 3px;
   overflow: hidden;
+  margin-top: 50px;
 }
 
 .img-c {
@@ -16,6 +17,7 @@
   float: left;
   position: relative;
   overflow: hidden;
+  /*top: 50px;*/
 }
 
 .img-w {
@@ -26,6 +28,7 @@
   background-position: center;
   cursor: pointer;
   transition: transform ease-in-out 300ms;
+
 }
 
 .img-w img {

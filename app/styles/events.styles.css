@@ -21,9 +21,13 @@
   margin-top: 40px;
 }
 
+.pasados{
+  margin-left: 10px;
+}
+
 .boton-costado-imprimir{
   display: none;
-  margin-top: 260px;
+  margin-top: 270px;
 }
 
 .events-container{

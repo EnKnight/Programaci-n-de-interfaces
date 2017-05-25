@@ -3,7 +3,6 @@
 .img {
   height: 100%;
   width: 100%;
-
 }
 
 input[type=submit] {
@@ -100,10 +99,10 @@ main {
 
 /* Skin */
 
-* {
+/** {
   margin: 0;
   padding: 0;
-}
+}*/
 
 /*body {
   background-image: url("dark_embroidery.png");
